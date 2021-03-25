@@ -1,6 +1,7 @@
 const navConfig = require('./config/navConfig')
 
 module.exports = {
+  base: '/docs/',
   title: '能量蓄水池',
   description: '学习笔记、知识文档、经验总结、生活杂记。',
   head: [
