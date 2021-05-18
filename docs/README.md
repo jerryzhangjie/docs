@@ -4,7 +4,7 @@ heroImage: /book.jpeg
 heroText: 能量蓄水池
 tagline: 学习笔记、知识文档、经验总结、生活杂记。
 actionText: 了解我 →
-actionLink: /zh/guide/
+actionLink: /about/
 # features:
 # - title: 简洁至上
 #   details: 以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。
