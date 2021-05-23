@@ -30,5 +30,18 @@ module.exports = {
         // '@img': 'path/to/some/dir'
       }
     }
-  }
+  },
+  plugins: {
+    '@vssue/vuepress-plugin-vssue': {
+      // 设置 `platform` 而不是 `api`
+      platform: 'github',
+      locale: 'zh',
+
+      // 其他的 Vssue 配置
+      owner: 'jerryzhangjie',
+      repo: 'docs',
+      clientId: '2e61b4850560a06ab210',
+      clientSecret: '6d36c9cea9a84278118f0829e8aca6ffb7163754',
+    },
+  },
 }
