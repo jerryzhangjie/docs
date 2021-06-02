@@ -94,16 +94,17 @@
 
    * 内容窃听。采用明文（不加密）通信，内容可能会被窃听。
    * 身份伪装。不验证对方的身份，有可能遭遇身份伪装。
-   * 数据完整性。无法验证数据的完整性，报文可能被篡改。
+   * 数据篡改。无法验证数据的完整性，报文可能被篡改。
 
 #### 什么是 HTTPS？
 
-   > HTTPS = HTTP + 加密 + 证书 + 完整性保护
+   > HTTPS = HTTP + SSL/TLS = HTTP + 加密 + 证书 + 完整性保护
 
-   HTTPS 并非是应用层的一种新协议，它是身披 SSL 外壳的 HTTP。只是 HTTP 通信接口部分用 SSL（Secure Socket Layer）和 TLS（Transport Layer Security）协议代替而已。      
+   HTTPS 并非是应用层的一种新协议，它是身披 SSL 外壳的 HTTP。只是 HTTP 通信接口部分用 SSL（Secure Socket Layer, 安全套接层）和 TLS（Transport Layer Security, 安全传输层协议）代替而已。      
 
    通常，HTTP 直接和 TCP 通信。当使用 SSL 时，则演变成先和 SSL 通信，再由 SSL 和 TCP 通信了。简言之，所谓 HTTPS，其实就是身披 SSL 协议这层外壳的 HTTP。     
-   在采用 SSL 后，HTTP 就拥有了 HTTPS 的加密、证书和完整性保护这些功能。
+   
+   在采用 SSL 后，HTTP 就拥有了 HTTPS 的加密(内同窃听)、证书(身份伪造)和完整性保护(数据篡改)这些功能。         
 
 #### 默认端口
 
