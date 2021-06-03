@@ -90,27 +90,44 @@
 
 ## HTTPS
 
-#### HTTP 存在的问题：    
+### HTTP 存在的问题：    
 
    * 内容窃听。采用明文（不加密）通信，内容可能会被窃听。
    * 身份伪装。不验证对方的身份，有可能遭遇身份伪装。
    * 数据篡改。无法验证数据的完整性，报文可能被篡改。
 
-#### 什么是 HTTPS？
+### 什么是 HTTPS？
 
    > HTTPS = HTTP + SSL/TLS = HTTP + 加密 + 证书 + 完整性保护
 
-   HTTPS 并非是应用层的一种新协议，它是身披 SSL 外壳的 HTTP。只是 HTTP 通信接口部分用 SSL（Secure Socket Layer, 安全套接层）和 TLS（Transport Layer Security, 安全传输层协议）代替而已。      
+   HTTPS 并非是应用层的一种新协议，它是身披 SSL 外壳的 HTTP。只是 HTTP 通信接口部分用 SSL（Secure Socket Layer, 安全套接层）或 TLS（Transport Layer Security, 安全传输层协议）代替而已。      
 
    通常，HTTP 直接和 TCP 通信。当使用 SSL 时，则演变成先和 SSL 通信，再由 SSL 和 TCP 通信了。简言之，所谓 HTTPS，其实就是身披 SSL 协议这层外壳的 HTTP。     
    
    在采用 SSL 后，HTTP 就拥有了 HTTPS 的加密(内同窃听)、证书(身份伪造)和完整性保护(数据篡改)这些功能。         
 
-#### 默认端口
+   TLS 是更为安全的升级版 SSL。由于 SSL 是更为常用的术语，因此常将安全证书统称为 SSL 证书。
+
+### 默认端口
 
 http - 80、https - 443
 
-#### https通信过程？
+### 加密方式
+
+1. 对称加密
+
+加密和解密使用同一个密钥。
+
+缺点：在将密钥发送给对方时，存在被窃取密钥的可能，而一旦密钥被窃取，加密就失去了意义。
+
+2. 非对称加密
+
+公钥
+
+3. 混合加密机制(HTTPS)
+
+
+### https通信过程
 
 **前置条件**：      
 
