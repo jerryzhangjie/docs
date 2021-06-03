@@ -6,7 +6,7 @@
 步骤：
 * 注册码云或Coding，从github导入需clone的项目。以码云为例
 
-![屏幕快照 2019-11-05 上午7.55.00.png](https://i.loli.net/2019/11/05/kno5jRvgd1s7XwF.png)
+![](https://gitee.com/jerry-zhang/image-database/raw/master/img/kno5jRvgd1s7XwF.png)
 
 * 从码云clone项目（会发现快很多）
 

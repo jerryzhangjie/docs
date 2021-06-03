@@ -79,7 +79,7 @@ Javascript 设计成单线程的原因：JS 可以操作 dom，若多线程同�
 主程序执行过程中并未阻塞ajax请求的执行，也就是说，这两个任务是同时执行的。而输出顺序的先后说明ajax的回调函数success是在主程序之后才执行的。  
 这段代码的实际执行流程可概括如下图：
 
-![20200730103043](https://raw.githubusercontent.com/jerryzhangjie/image-database/master/picgo/20200730103043.jpg)
+![20200730103043](https://gitee.com/jerry-zhang/image-database/raw/master/picgo/20200730103043.jpg)
 
 1. 任务进入JS线程(JS引擎线程，即主线程)的执行栈，判断该任务为同步任务或异步任务；
 2. 同步任务继续在JS线程中执行直至全部执行完毕；
@@ -117,7 +117,7 @@ Javascript 设计成单线程的原因：JS 可以操作 dom，若多线程同�
 3. 浏览器渲染进程为异步任务创建异步线程(定时触发器线程、http请求线程)执行异步任务，异步任务的回调或事件绑定的回调被注册到事件触发线程中，异步任务完成后由事件触发线程将宏任务的回调函数压入宏任务事件队列，将微任务的回调函数压入微任务事件队列，异步线程和JS线程独立运行，互不干扰；
 4. JS线程不断的检查执行栈是否为空，若为空，则读取事件队列队首的回调函数并压入执行栈进行执行。事件循环的顺序为：**先执行宏任务(整体代码或回调)，再执行当前宏任务回调中出现过的微任务，接着执行宏任务事件队列中的下一个宏任务，接着再执行当前宏任务回调中出现过的微任务，依次循环。**（可结合流程图及代码理解这个过程）
 
-![Screenshot0730-1050](https://raw.githubusercontent.com/jerryzhangjie/image-database/master/picgo/Screenshot0730-1050.jpg)
+![Screenshot0730-1050](https://gitee.com/jerry-zhang/image-database/raw/master/picgo/Screenshot0730-1050.jpg)
 
         console.log('1');   // 整体代码  
         setTimeout(function() {   // 宏任务1  

@@ -136,15 +136,15 @@ MD文件后缀为 \.md
 ## 8. 图片
 添加图片形式和链接相似，只需要在链接的基础上前方加一个 `!` 号。
 
-    ![md.jpeg](https://i.loli.net/2019/06/02/5cf3989ad767c17719.jpeg)
+    ![](https://gitee.com/jerry-zhang/image-database/raw/master/img/5cf3989ad767c17719.jpeg)
 
-![md.jpeg](https://i.loli.net/2019/06/02/5cf3989ad767c17719.jpeg)
+![](https://gitee.com/jerry-zhang/image-database/raw/master/img/5cf3989ad767c17719.jpeg)
 
     ![md.jpeg][2]
 
-    [2]:https://i.loli.net/2019/06/02/5cf3989ad767c17719.jpeg
+    [2]:https://gitee.com/jerry-zhang/image-database/raw/master/img/5cf3989ad767c17719.jpeg
 
-![md.jpeg](https://i.loli.net/2019/06/02/5cf3989ad767c17719.jpeg)
+![](https://gitee.com/jerry-zhang/image-database/raw/master/img/5cf3989ad767c17719.jpeg)
 
 ## 9. 反斜杠
 相当于反转义作用。使符号成为普通符号。

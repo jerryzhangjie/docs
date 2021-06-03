@@ -86,7 +86,7 @@ SPA中唯一的new是根实例，而通过import使用的.vue组件，其实例�
 ## 8.
 **如何理解Vue遵循MVVM模型？**
 
-![MVVM.png](https://i.loli.net/2019/06/17/5d07951e1bef976565.png)
+![](https://gitee.com/jerry-zhang/image-database/raw/master/img/5d07951e1bef976565.png)
 
 ***
 ## 9.
@@ -108,7 +108,7 @@ SPA中唯一的new是根实例，而通过import使用的.vue组件，其实例�
 ## 11.
 > **生命周期**
 
-![lifecycle.png](https://i.loli.net/2019/06/19/5d0a229af2e1156221.png)
+![](https://gitee.com/jerry-zhang/image-database/raw/master/img/5d0a229af2e1156221.png)
 
 ***
 ## 12.

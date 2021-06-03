@@ -10,7 +10,7 @@
 * 通过插件实现其它高级功能 - 网络限速等
               
 ## 2. 工作原理
-![屏幕快照 2019-11-10 上午11.00.41.png](https://i.loli.net/2019/11/10/5esLt7rWZDOzIC3.png)
+![](https://gitee.com/jerry-zhang/image-database/raw/master/img/5esLt7rWZDOzIC3.png)
 
 在客户端与服务端之间建立了一个代理服务器，客户端发起的所有请求，都要通过Fiddler代理服务器才能到达最终的服务器。
 
@@ -23,7 +23,7 @@
 * **缓冲模式(buffering)** 截获一次http的所有响应数据后再返回给客户端。
                     
 ## 3. 功能说明
-![timg.jpeg](https://i.loli.net/2019/11/10/jZYHnrJ7cyOxkQM.jpg)
+![](https://gitee.com/jerry-zhang/image-database/raw/master/img/jZYHnrJ7cyOxkQM.jpg)
 
 * Tools         配置host代理，即将某个域名请求，全部代理到指定的ip上
 

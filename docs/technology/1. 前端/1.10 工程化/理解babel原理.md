@@ -6,7 +6,7 @@ babel 是一个转译器，负责将 ES6+ 转译为 ES5。
 
 babel 转译过程：解析（parser）、转译（traverse）、生成（generator）        
 
-![babel](https://raw.githubusercontent.com/jerryzhangjie/image-database/master/picgo/babel.jpg)
+![babel](https://gitee.com/jerry-zhang/image-database/raw/master/picgo/babel.jpg)
 
 ### 1. 解析
 

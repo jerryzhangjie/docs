@@ -23,7 +23,7 @@
 
    应用层、**表示层**、**会话层**、传输层、网络层、数据链路层、物理层。
 
-   ![tcp-ip-0](https://raw.githubusercontent.com/jerryzhangjie/image-database/master/picgo/tcp-ip-0.jpg)
+   ![tcp-ip-0](https://gitee.com/jerry-zhang/image-database/raw/master/picgo/tcp-ip-0.jpg)
 
    `TCP/IP` 协议族是互联网相关的各类协议的总称。     
 
@@ -38,7 +38,7 @@
 
 ## 相关协议及与`HTTP`关系
 
-   ![tcp-ip-1](https://raw.githubusercontent.com/jerryzhangjie/image-database/master/picgo/tcp-ip-1.jpg)
+   ![tcp-ip-1](https://gitee.com/jerry-zhang/image-database/raw/master/picgo/tcp-ip-1.jpg)
 
    * `DNS`-应用层：在发送端，提供域名到 `IP` 地址之间的解析服务。
    * `HTTP`-应用层：在发送端，生成请求报文；在接收端，解析请求报文。
@@ -55,11 +55,11 @@
 
 ## 常用请求方法
 
-   ![methods](https://raw.githubusercontent.com/jerryzhangjie/image-database/master/picgo/methods.jpg)
+   ![methods](https://gitee.com/jerry-zhang/image-database/raw/master/picgo/methods.jpg)
 
 ## 常见状态码
 
-   ![status_code](https://raw.githubusercontent.com/jerryzhangjie/image-database/master/picgo/status_code.jpg)
+   ![status_code](https://gitee.com/jerry-zhang/image-database/raw/master/picgo/status_code.jpg)
 
    |状态码 原因|含义
    |--------|--------
@@ -128,7 +128,7 @@ http - 80、https - 443
 
 优点：仅告知对方用于加密的公钥，而用于解密的私钥不会被窃取，安全性较高。
 
-缺点：加密解密性能较低，比较耗时。
+缺点：解密过程（是在对离散对数进行求值）性能较低，比较耗时。
 
 3. 混合加密机制(HTTPS)
 
@@ -141,16 +141,16 @@ http - 80、https - 443
 
 **前置条件**：      
 
-a. 网站向证书颁发机构提供公钥，机构用自己的公钥加密网站的公钥，并加上数字签名，生成公钥数字证书提供给网站；     
+a. 网站向证书颁发机构提供公钥，机构用自己的公钥加密网站的公钥，并加上数字签名，生成`公钥数字证书`提供给网站；     
 b. 浏览器中预先内嵌了证书颁发机构的公钥。
 
 1. **TCP三次握手建立连接**     
 
-![Screenshot0720-0939](https://raw.githubusercontent.com/jerryzhangjie/image-database/master/picgo/Screenshot0720-0939.jpg)
+![Screenshot0720-0939](https://gitee.com/jerry-zhang/image-database/raw/master/picgo/Screenshot0720-0939.jpg)
 
-2. **SSL通信（非对称加密通信）**     
+2. **SSL加密握手（非对称加密通信）**     
    * C -> S：发送客户端支持的加密组件列表、SSL版本
-   * S -> C：选择一种服务端也支持的加密组件。发送加密组件和公钥数字证书
+   * S -> C：选择一种服务端也支持的加密组件。发送加密组件和`公钥数字证书`
    * C -> S：通过证书上的数字签名验证服务端身份，同时用浏览器内置的机构公钥解密证书，获得公钥。生成密钥随机数（用于之后的对称加密通信）并用公钥加密该随机数。发送加密后的密钥。
    * S：通过私钥解密加密后的密钥，获得密钥。
 
@@ -161,7 +161,7 @@ b. 浏览器中预先内嵌了证书颁发机构的公钥。
 
 4. **TCP四次挥手断开连接**
 
-![20200720093750](https://raw.githubusercontent.com/jerryzhangjie/image-database/master/picgo/20200720093750.jpg)
+![20200720093750](https://gitee.com/jerry-zhang/image-database/raw/master/picgo/20200720093750.jpg)
 
 ## URI 与 URL 的区别
 
@@ -223,10 +223,9 @@ GET 和 POST 是 HTTP 的两种请求方式，HTTP 是基于 TCP/IP 的应用层
 
 ## 常见 http 报文解析
 
-![http报文.jpg](https://raw.githubusercontent.com/jerryzhangjie/image-database/master/picgo/http%E6%8A%A5%E6%96%87.jpg)
+![http报文.jpg](https://gitee.com/jerry-zhang/image-database/raw/master/picgo/http%E6%8A%A5%E6%96%87.jpg)
 
 
 *参考*：
 
 * http://www.ruanyifeng.com/blog/2012/05/internet_protocol_suite_part_i.html
-* 
