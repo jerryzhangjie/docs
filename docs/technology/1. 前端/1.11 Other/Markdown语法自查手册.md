@@ -133,7 +133,17 @@ MD文件后缀为 \.md
 
 [1]:https://github.com
 
-## 8. 图片
+## 8. 锚点
+
+设置锚点与链接类似：
+
+    [显示内容](#标题名称)
+
+    例如跳转至what：[what](#what)
+
+[what](#what)
+
+## 9. 图片
 添加图片形式和链接相似，只需要在链接的基础上前方加一个 `!` 号。
 
     ![](https://gitee.com/jerry-zhang/image-database/raw/master/img/5cf3989ad767c17719.jpeg)
@@ -146,14 +156,14 @@ MD文件后缀为 \.md
 
 ![](https://gitee.com/jerry-zhang/image-database/raw/master/img/5cf3989ad767c17719.jpeg)
 
-## 9. 反斜杠
+## 10. 反斜杠
 相当于反转义作用。使符号成为普通符号。
 
 \\##
 
 \##
 
-## 10. 表格
+## 11. 表格
 \|协议类型\|默认端口
 
 \|--------\|--------
@@ -173,10 +183,10 @@ MD文件后缀为 \.md
 |ftp|21
 |telnet|23
 
-## 11. 其它
+## 12. 其它
 [MD流程图传送带](https://www.jianshu.com/p/b421cc723da5)
 
-## 12. 扩展
+## 13. 扩展
 上文提到`MD是将以MD语法编写的文本转换成HTML内容的工具`，其实MD也支持直接书写HTML标签，例如我们可以在MD文件的任意位置嵌入图片：
 
 `<img src="https://i.loli.net/2019/06/07/5cf9ca3930eab48145.jpeg" style=" position: absolute; width: 200px; height: 150px; top: 50px; right: 27px;">`
