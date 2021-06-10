@@ -2,9 +2,9 @@
 
 万维网3项构建技术：
 
-    * 把标准通用标记语言作为页面的文本标记语言的`HTML`
-    * 作为文档传递协议的`HTTP`
-    * 指定文档所在地址的`URL`
+* 把标准通用标记语言作为页面的文本标记语言的`HTML`
+* 作为文档传递协议的`HTTP`
+* 指定文档所在地址的`URL`
 
 ## 什么是`HTTP`
    > `HTTP`（HyperText Transfer Protocol，超文本传输协议）是建立在 `TCP/IP` 之上的应用层通信协议，它是 `TCP/IP` 协议族的一个子集。 —— `WebSocket` 协议也是如此。
@@ -88,6 +88,7 @@ Cookie 技术通过在请求和响应报文中写入 Cookie 信息来控制客�
 5. Path     - 该 Cookie 字段适应的文件目录(默认文档所在目录)
 6. Secure   - 仅在https安全通信时发送该 Cookie 字段
 7. HttpOnly - 仅在网络请求中发送，不能被js脚本获取
+8. SameSite - 限制第三方页面访问目标网站时携带 Cookie 字段
 
 Cookie 传递过程：
 
@@ -126,8 +127,8 @@ Cookie 传递过程：
       * 定义。301被请求的资源已永久移动到新位置，再次请求时自动使用本请求返回的url。302被请求的资源临时移动到新位置，再次请求时还是以该url发起请求。
       * 缓存。301默认开启缓存，302默认不开启(除非指定Cache-Control或Exprise)。
       * 搜索引擎。301时搜索引擎会认为老url已失效，会爬取新url内容并保存新url。302时搜索引擎会认为老url未失效，会爬取新url内容，但保存老url地址，当收录的指向新url的地址较多时，搜索引擎会认为是恶意处理从而会对该网站降权。
-
-    共同点：都会在响应头中添加 `Location: 新的URL`，并让客户端以 GET 方式请求新的URL。
+  
+        共同点：都会在响应头中添加 `Location: 新的URL`，并让客户端以 GET 方式请求新的URL。
   
    2. 401(未认证) 和 403(未授权) 的区别？
    
@@ -223,7 +224,8 @@ b. 浏览器中预先内嵌了证书颁发机构的公钥。
 
 ### URI 与 URL 的区别
 
-   URI 统一资源标识符，可以理解为表示的就是某个资源。而 URL 统一资源定位符，表示的是资源在互联网中的地址。
+   * URI 统一资源标识符，可以理解为表示的就是某个资源。
+   * URL 统一资源定位符，表示的是资源在互联网中的地址。
 
 ### cookie、session 与 token 的区别
 
@@ -279,7 +281,7 @@ GET 和 POST 是 HTTP 的两种请求方式，HTTP 是基于 TCP/IP 的应用层
 
 * HTTP方法的幂等性是指一次和多次请求某一个资源应该具有同样的副作用。
 * POST和PUT的区别容易被简单地误认为“POST表示创建资源，PUT表示更新资源”；而实际上，二者均可用于创建资源，更为本质的差别是在幂等性方面。
-* POST所对应的URI并非创建的资源本身，而是资源的接收者。比如：POST http://www.forum.com/articles的语义是在http://www.forum.com/articles下创建一篇帖子，HTTP响应中应包含帖子的创建状态以及帖子的URI。两次相同的POST请求会在服务器端创建两份资源，它们具有不同的URI；所以，POST方法不具备幂等性。而PUT所对应的URI是要创建或更新的资源本身。比如：PUT http://www.forum/articles/4231的语义是创建或更新ID为4231的帖子。对同一URI进行多次PUT的副作用和一次PUT是相同的；因此，PUT方法具有幂等性。
+* POST所对应的URI并非创建的资源本身，而是资源的接收者。比如：POST http://www.forum.com/articles 的语义是在 http://www.forum.com/articles 下创建一篇帖子，HTTP响应中应包含帖子的创建状态以及帖子的URI。两次相同的POST请求会在服务器端创建两份资源，它们具有不同的URI；所以，POST方法不具备幂等性。而PUT所对应的URI是要创建或更新的资源本身。比如：PUT http://www.forum/articles/4231 的语义是创建或更新ID为4231的帖子。对同一URI进行多次PUT的副作用和一次PUT是相同的；因此，PUT方法具有幂等性。
 
 ## 常见 http 报文解析
 
@@ -288,4 +290,6 @@ GET 和 POST 是 HTTP 的两种请求方式，HTTP 是基于 TCP/IP 的应用层
 
 *参考*：
 
-* http://www.ruanyifeng.com/blog/2012/05/internet_protocol_suite_part_i.html
+* [互联网协议入门（一）](http://www.ruanyifeng.com/blog/2012/05/internet_protocol_suite_part_i.html)
+* [深入理解http2.0协议，看这篇就够了！](https://zhuanlan.zhihu.com/p/89471776)
+* [详解TCP三次握手以及TLS/SSL握手](https://ocdman.github.io/2018/11/02/%E8%AF%A6%E8%A7%A3TCP%E4%B8%89%E6%AC%A1%E6%8F%A1%E6%89%8B%E4%BB%A5%E5%8F%8ATLS-SSL%E6%8F%A1%E6%89%8B/)
