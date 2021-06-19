@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>能量蓄水池</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/docs/favicon.svg">
+    <meta name="description" content="学习笔记、知识文档、经验总结、生活杂记。">
+    
+    <link rel="preload" href="/docs/assets/css/0.styles.767e998a.css" as="style"><link rel="preload" href="/docs/assets/js/app.574fc7ba.js" as="script"><link rel="preload" href="/docs/assets/js/2.438c9cc2.js" as="script"><link rel="preload" href="/docs/assets/js/62.c62037f3.js" as="script"><link rel="prefetch" href="/docs/assets/js/10.782efd2f.js"><link rel="prefetch" href="/docs/assets/js/11.9a017d0a.js"><link rel="prefetch" href="/docs/assets/js/12.8c3fe05c.js"><link rel="prefetch" href="/docs/assets/js/13.32b8501e.js"><link rel="prefetch" href="/docs/assets/js/14.7cbead99.js"><link rel="prefetch" href="/docs/assets/js/15.5ca6d375.js"><link rel="prefetch" href="/docs/assets/js/16.7b1d893e.js"><link rel="prefetch" href="/docs/assets/js/17.8243e47c.js"><link rel="prefetch" href="/docs/assets/js/18.f795c9b4.js"><link rel="prefetch" href="/docs/assets/js/19.e16fd372.js"><link rel="prefetch" href="/docs/assets/js/20.12825b32.js"><link rel="prefetch" href="/docs/assets/js/21.d2e3ba19.js"><link rel="prefetch" href="/docs/assets/js/22.a091a3f3.js"><link rel="prefetch" href="/docs/assets/js/23.1829b4d2.js"><link rel="prefetch" href="/docs/assets/js/24.41ea6154.js"><link rel="prefetch" href="/docs/assets/js/25.d944d918.js"><link rel="prefetch" href="/docs/assets/js/26.f9ba23ac.js"><link rel="prefetch" href="/docs/assets/js/27.33228142.js"><link rel="prefetch" href="/docs/assets/js/28.cc4b94e6.js"><link rel="prefetch" href="/docs/assets/js/29.e183b477.js"><link rel="prefetch" href="/docs/assets/js/3.ce6400d4.js"><link rel="prefetch" href="/docs/assets/js/30.f2b86e7a.js"><link rel="prefetch" href="/docs/assets/js/31.75faa4ac.js"><link rel="prefetch" href="/docs/assets/js/32.1813d3da.js"><link rel="prefetch" href="/docs/assets/js/33.c64ac273.js"><link rel="prefetch" href="/docs/assets/js/34.d54f07d6.js"><link rel="prefetch" href="/docs/assets/js/35.c6b17c27.js"><link rel="prefetch" href="/docs/assets/js/36.93273509.js"><link rel="prefetch" href="/docs/assets/js/37.f4f46233.js"><link rel="prefetch" href="/docs/assets/js/38.fa9900ec.js"><link rel="prefetch" href="/docs/assets/js/39.3b24b23d.js"><link rel="prefetch" href="/docs/assets/js/4.9b8751d4.js"><link rel="prefetch" href="/docs/assets/js/40.5728cc60.js"><link rel="prefetch" href="/docs/assets/js/41.9e47e643.js"><link rel="prefetch" href="/docs/assets/js/42.2cd430a0.js"><link rel="prefetch" href="/docs/assets/js/43.0e9a4cd9.js"><link rel="prefetch" href="/docs/assets/js/44.ec5e25b6.js"><link rel="prefetch" href="/docs/assets/js/45.4cdd4bf1.js"><link rel="prefetch" href="/docs/assets/js/46.b8a5de46.js"><link rel="prefetch" href="/docs/assets/js/47.544a1352.js"><link rel="prefetch" href="/docs/assets/js/48.75ab366d.js"><link rel="prefetch" href="/docs/assets/js/49.59e58f04.js"><link rel="prefetch" href="/docs/assets/js/5.6d67c780.js"><link rel="prefetch" href="/docs/assets/js/50.96ea067f.js"><link rel="prefetch" href="/docs/assets/js/51.144bb382.js"><link rel="prefetch" href="/docs/assets/js/52.8d9aac06.js"><link rel="prefetch" href="/docs/assets/js/53.06e2c5d4.js"><link rel="prefetch" href="/docs/assets/js/54.2d17b229.js"><link rel="prefetch" href="/docs/assets/js/55.7cda8245.js"><link rel="prefetch" href="/docs/assets/js/56.133756ab.js"><link rel="prefetch" href="/docs/assets/js/57.74959c99.js"><link rel="prefetch" href="/docs/assets/js/58.18ff2b44.js"><link rel="prefetch" href="/docs/assets/js/59.b35de2b8.js"><link rel="prefetch" href="/docs/assets/js/6.c3ae577d.js"><link rel="prefetch" href="/docs/assets/js/60.39380f27.js"><link rel="prefetch" href="/docs/assets/js/61.48b5f2aa.js"><link rel="prefetch" href="/docs/assets/js/63.a439b062.js"><link rel="prefetch" href="/docs/assets/js/64.c24f247a.js"><link rel="prefetch" href="/docs/assets/js/65.e1fa1286.js"><link rel="prefetch" href="/docs/assets/js/66.313ff872.js"><link rel="prefetch" href="/docs/assets/js/67.b8bfc1ca.js"><link rel="prefetch" href="/docs/assets/js/68.f81bf7a5.js"><link rel="prefetch" href="/docs/assets/js/69.c420ebd2.js"><link rel="prefetch" href="/docs/assets/js/7.5229be7a.js"><link rel="prefetch" href="/docs/assets/js/70.f4bec417.js"><link rel="prefetch" href="/docs/assets/js/71.40db7b8a.js"><link rel="prefetch" href="/docs/assets/js/72.f297dce6.js"><link rel="prefetch" href="/docs/assets/js/73.2d73f227.js"><link rel="prefetch" href="/docs/assets/js/74.735fb235.js"><link rel="prefetch" href="/docs/assets/js/75.50f07148.js"><link rel="prefetch" href="/docs/assets/js/76.89a73abf.js"><link rel="prefetch" href="/docs/assets/js/77.66ba0d1e.js"><link rel="prefetch" href="/docs/assets/js/78.81c41079.js"><link rel="prefetch" href="/docs/assets/js/79.14a4fcbf.js"><link rel="prefetch" href="/docs/assets/js/8.30d4ce7d.js"><link rel="prefetch" href="/docs/assets/js/80.af5d096b.js"><link rel="prefetch" href="/docs/assets/js/81.4eccd1c7.js"><link rel="prefetch" href="/docs/assets/js/82.d069817a.js"><link rel="prefetch" href="/docs/assets/js/83.495cd329.js"><link rel="prefetch" href="/docs/assets/js/84.9489494e.js"><link rel="prefetch" href="/docs/assets/js/85.e4406d55.js"><link rel="prefetch" href="/docs/assets/js/86.71cff966.js"><link rel="prefetch" href="/docs/assets/js/87.5eba7956.js"><link rel="prefetch" href="/docs/assets/js/88.6670820c.js"><link rel="prefetch" href="/docs/assets/js/89.cc537610.js"><link rel="prefetch" href="/docs/assets/js/9.99b7e418.js"><link rel="prefetch" href="/docs/assets/js/90.6ccfe07d.js">
+    <link rel="stylesheet" href="/docs/assets/css/0.styles.767e998a.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/docs/" class="home-link router-link-active"><img src="/docs/favicon.svg" alt="能量蓄水池" class="logo"> <span class="site-name can-hide">能量蓄水池</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/docs/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/docs/about/" class="nav-link">
+  关于
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="技术" class="dropdown-title"><span class="title">技术</span> <span class="arrow down"></span></button> <button type="button" aria-label="技术" class="mobile-dropdown-title"><span class="title">技术</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/technology/1. 前端/" class="nav-link">
+  前端
+</a></li><li class="dropdown-item"><!----> <a href="/docs/technology/2. 服务端/" class="nav-link">
+  服务端
+</a></li><li class="dropdown-item"><!----> <a href="/docs/technology/3. 其它/" class="nav-link">
+  其它
+</a></li></ul></div></div><div class="nav-item"><a href="/docs/life/" class="nav-link">
+  生活杂记
+</a></div><div class="nav-item"><a href="/docs/other/" class="nav-link">
+  其它
+</a></div> <a href="https://github.com/jerryzhangjie/docs" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/docs/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/docs/about/" class="nav-link">
+  关于
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="技术" class="dropdown-title"><span class="title">技术</span> <span class="arrow down"></span></button> <button type="button" aria-label="技术" class="mobile-dropdown-title"><span class="title">技术</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/technology/1. 前端/" class="nav-link">
+  前端
+</a></li><li class="dropdown-item"><!----> <a href="/docs/technology/2. 服务端/" class="nav-link">
+  服务端
+</a></li><li class="dropdown-item"><!----> <a href="/docs/technology/3. 其它/" class="nav-link">
+  其它
+</a></li></ul></div></div><div class="nav-item"><a href="/docs/life/" class="nav-link">
+  生活杂记
+</a></div><div class="nav-item"><a href="/docs/other/" class="nav-link">
+  其它
+</a></div> <a href="https://github.com/jerryzhangjie/docs" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>1.1 基础 - ECMAScript</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>1.2 基础 - CSS</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>1.3 基础 - HTML</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>1.4 浏览器</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>1.5 网络</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>1.6 设计模式</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>1.7 算法</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>1.8 框架</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/docs/technology/1. 前端/1.8 框架/electron-基础入门.html" class="sidebar-link">electron-基础入门</a></li><li><a href="/docs/technology/1. 前端/1.8 框架/jQuery.html" class="sidebar-link">jQuery</a></li><li><a href="/docs/technology/1. 前端/1.8 框架/react-Mobx.html" class="sidebar-link">react-Mobx</a></li><li><a href="/docs/technology/1. 前端/1.8 框架/react-React 简书.html" class="sidebar-link">react-React 简书</a></li><li><a href="/docs/technology/1. 前端/1.8 框架/react-React.html" class="sidebar-link">react-React</a></li><li><a href="/docs/technology/1. 前端/1.8 框架/Vite原理与实现.html" class="sidebar-link">Vite原理与实现</a></li><li><a href="/docs/technology/1. 前端/1.8 框架/vue-Object.defineProperty与双向数据绑定.html" class="sidebar-link">vue-Object.defineProperty与双向数据绑定</a></li><li><a href="/docs/technology/1. 前端/1.8 框架/vue-VueRouter.html" class="active sidebar-link">vue-VueRouter</a></li><li><a href="/docs/technology/1. 前端/1.8 框架/vue-Vuex.html" class="sidebar-link">vue-Vuex</a></li><li><a href="/docs/technology/1. 前端/1.8 框架/vue-Vue的diff算法.html" class="sidebar-link">vue-Vue的diff算法</a></li><li><a href="/docs/technology/1. 前端/1.8 框架/vue-作用域插槽.html" class="sidebar-link">vue-作用域插槽</a></li><li><a href="/docs/technology/1. 前端/1.8 框架/vue-官网学习纪要.html" class="sidebar-link">vue-官网学习纪要</a></li><li><a href="/docs/technology/1. 前端/1.8 框架/vue-慕课网实战 - 去哪儿网学习纪要.html" class="sidebar-link">vue-慕课网实战 - 去哪儿网学习纪要</a></li><li><a href="/docs/technology/1. 前端/1.8 框架/vue-源码学习.html" class="sidebar-link">vue-源码学习</a></li><li><a href="/docs/technology/1. 前端/1.8 框架/vue-组件命名及引用规范.html" class="sidebar-link">vue-组件命名及引用规范</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>1.9 实践及总结</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>1.10 工程化</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>1.11 Other</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><ul><li><p>vue-router是vue.js官方的路由管理器。</p></li> <li><p>使用方法</p></li></ul> <div class="language- extra-class"><pre class="language-text"><code>// 1. 定义路由导航：声明式导航 或 编程式导航
+&lt;!-- 声明式：to指定路由链接，router-link会被渲染成a标签，点击且匹配to成功后，自动添加class属性值.router-link-active --&gt;
+&lt;router-link to=&quot;/foo&quot;&gt;Go to Foo&lt;/router-link&gt;
+&lt;!-- 编程式：js中动态控制路由 --&gt;
+this.$router.push({path: '/foo'})
+
+// 2. 定义路由出口，即目标组件渲染的位置
+&lt;router-view&gt;&lt;/router-view&gt;
+
+// 3. 定义或import路由组件
+const Foo = { template: '&lt;div&gt;foo&lt;/div&gt;' } 或 import Foo from './foo'
+
+// 4. 创建router实例，传入routes配置
+const router = new Router({
+  routes: [
+      {
+        path: '/foo',
+        component: Foo
+      }
+  ]
+})
+
+// 5. 通过router属性将路由实例配置到vue根实例
+const app = new Vue({
+  el: '#app',
+  router: router
+})
+</code></pre></div><ul><li><p>任何组件内可通过 <code>this.$router</code> 访问路由实例，可通过 <code>this.$route</code> 获取当前路由对象</p></li> <li><p>通过添加“动态路径参数”实现动态路由(场景：多种匹配都映射到同一个组件，例如列表项均跳转至详情页，通过id区别内容)</p></li></ul> <div class="language- extra-class"><pre class="language-text"><code>const router = new Router({
+  routes: [
+      {
+        &lt;!-- 参数值会被设置到 this.$route.params，并通过this.$route.params.paramName在任意组件中获取 --&gt;
+        path: '/foo:paramName',
+        component: Foo
+      }
+  ]
+})
+</code></pre></div><ul><li>仅改变“动态路径参数”，由于复用相同组件，想对参数的变化作出响应，有两种方法：</li></ul> <div class="language- extra-class"><pre class="language-text"><code>// 1. 组件中监测 $route 路由对象的变化
+watch: {
+  '$route' (to, from) {
+    // 对路由变化作出响应...
+  }
+}
+// 2. 组件中配置“导航守卫”
+beforeRouteUpdate (to, from, next) {
+  // 对路由变化作出响应...
+  // 执行next()
+}
+</code></pre></div><p>详情了解 <a href="https://router.vuejs.org/zh/guide/advanced/navigation-guards.html#%E5%85%A8%E5%B1%80%E5%89%8D%E7%BD%AE%E5%AE%88%E5%8D%AB" target="_blank" rel="noopener noreferrer">导航守卫<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <ul><li>通过为router路由实例添加children配置项，实现“嵌套路由”</li></ul> <div class="language- extra-class"><pre class="language-text"><code>const User = {
+  template: `
+    &lt;div class=&quot;user&quot;&gt;
+      &lt;h2&gt;User {{ $route.params.id }}&lt;/h2&gt;
+      &lt;!-- 路由的目标组件中也有个router-view --&gt;
+      &lt;router-view&gt;&lt;/router-view&gt;
+    &lt;/div&gt;
+  `
+}
+const router = new VueRouter({
+  routes: [
+    { path: '/user/:id', component: User,
+      children: [
+        {
+          // 当 /user/:id/profile 匹配成功，
+          // UserProfile 会被渲染在 User 的 &lt;router-view&gt; 中
+          path: 'profile',
+          component: UserProfile
+        }
+      ]
+    }
+  ]
+})
+</code></pre></div><ul><li>函数式编程<br>
+this.$router.push(path)     将当前路径添加至浏览器的history，并跳转至path<br>
+this.$router.replace(path)  不添加history，直接跳转至path<br>
+this.$router.go(n)          在 history 记录中向前或者后退n步</li></ul> <div class="language- extra-class"><pre class="language-text"><code>&lt;!-- push、replace用法相同 --&gt;
+// 字符串
+router.push('home')
+
+// 对象
+router.push({ path: 'home' })
+
+// 命名的路由
+router.push({ name: 'user', params: { userId: '123' }})
+
+// 带查询参数，变成 /register?plan=private
+router.push({ path: 'register', query: { plan: 'private' }})
+</code></pre></div><ul><li>命名视图</li></ul> <div class="language- extra-class"><pre class="language-text"><code>// html中命名多个视图
+&lt;router-view class=&quot;view one&quot;&gt;&lt;/router-view&gt;
+&lt;router-view class=&quot;view two&quot; name=&quot;a&quot;&gt;&lt;/router-view&gt;
+&lt;router-view class=&quot;view three&quot; name=&quot;b&quot;&gt;&lt;/router-view&gt;
+
+// 相应的，路由实例中对应多个组件
+const router = new VueRouter({
+  routes: [
+    {
+      path: '/',
+      components: { // 带上s
+        default: Foo,
+        a: Bar,
+        b: Baz
+      }
+    }
+  ]
+})
+</code></pre></div><ul><li>重定向路由（redirect）</li></ul> <div class="language- extra-class"><pre class="language-text"><code>&lt;!-- 访问/a时，跳转至/b --&gt;
+const router = new VueRouter({
+  routes: [
+    { path: '/a', redirect: '/b' }
+  ]
+})
+</code></pre></div><ul><li>别名路由（alias）</li></ul> <div class="language- extra-class"><pre class="language-text"><code>&lt;!-- 访问/b时，路由虽然现实/b，但实际访问的还是/a，与访问/a一样 --&gt;
+const router = new VueRouter({
+  routes: [
+    { path: '/a', component: A, alias: '/b' }
+  ]
+})
+</code></pre></div><ul><li>路由组件传参</li></ul> <div class="language- extra-class"><pre class="language-text"><code>const User = {
+  props: ['id'],
+  template: '&lt;div&gt;User {{ id }}&lt;/div&gt;'
+}
+const router = new VueRouter({
+  routes: [
+    { path: '/user/:id', component: User, props: true }
+  ]
+})
+</code></pre></div><ul><li>滚动行为</li></ul> <div class="language- extra-class"><pre class="language-text"><code>const router = new VueRouter({
+  routes: [...],
+  scrollBehavior (to, from, savedPosition) {
+    // return 期望滚动到的位置
+    return { x: 0, y: 0 }
+  }
+})
+</code></pre></div><ul><li><p>路由懒加载</p> <p>结合<code>Vue</code>的异步组件和<code>Webpack</code>的代码分割功能，轻松实现路由组件的懒加载。<br>
+首先，<code>Vue</code>异步组件：可以将异步组件定义为返回一个<code>Promise</code>的工厂函数（该函数返回的 Promise 应该 resolve 组件本身）</p> <div class="language- extra-class"><pre><code>const Foo = () =&gt; Promise.resolve({/* 组件定义对象 */})
+</code></pre></div><p>其次，<code>Webpack</code>代码分割：在<code>Webpack 2</code>中，可以使用<code>动态import</code>语法来定义代码分块点</p> <div class="language- extra-class"><pre><code>import('./Foo.vue') // 返回 Promise
+</code></pre></div><p>两者结合，可在<code>VueRouter</code>中，这样实现组件懒加载：</p> <div class="language- extra-class"><pre><code>// 懒加载
+const Foo = () =&gt; import('./Foo.vue') // webpack 打包时生成单独文件
+// 使用
+const router = new VueRouter({
+  routes: [
+    { path: '/foo', component: Foo }  // 当路由生效时，就会去懒加载 Foo 组件的打包文件
+  ]
+})
+</code></pre></div><p>按组分块，是指使用名称<code>chunk</code>，将几个异步组件打包到同一个文件中</p> <div class="language- extra-class"><pre><code>const Foo = () =&gt; import(/* webpackChunkName: &quot;group-foo&quot; */ './Foo.vue')
+const Bar = () =&gt; import(/* webpackChunkName: &quot;group-foo&quot; */ './Bar.vue')
+const Baz = () =&gt; import(/* webpackChunkName: &quot;group-foo&quot; */ './Baz.vue')</code></pre></div></li></ul></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">最后更新时间:</span> <span class="time">4/27/2021, 7:11:19 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/docs/technology/1. 前端/1.8 框架/vue-Object.defineProperty与双向数据绑定.html" class="prev">
+        vue-Object.defineProperty与双向数据绑定
+      </a></span> <span class="next"><a href="/docs/technology/1. 前端/1.8 框架/vue-Vuex.html">
+        vue-Vuex
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/docs/assets/js/app.574fc7ba.js" defer></script><script src="/docs/assets/js/2.438c9cc2.js" defer></script><script src="/docs/assets/js/62.c62037f3.js" defer></script>
+  </body>
+</html>

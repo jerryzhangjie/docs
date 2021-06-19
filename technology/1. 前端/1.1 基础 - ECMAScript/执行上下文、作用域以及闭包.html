@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>一、 执行上下文 | 能量蓄水池</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/docs/favicon.svg">
+    <meta name="description" content="学习笔记、知识文档、经验总结、生活杂记。">
+    
+    <link rel="preload" href="/docs/assets/css/0.styles.767e998a.css" as="style"><link rel="preload" href="/docs/assets/js/app.574fc7ba.js" as="script"><link rel="preload" href="/docs/assets/js/2.438c9cc2.js" as="script"><link rel="preload" href="/docs/assets/js/18.f795c9b4.js" as="script"><link rel="prefetch" href="/docs/assets/js/10.782efd2f.js"><link rel="prefetch" href="/docs/assets/js/11.9a017d0a.js"><link rel="prefetch" href="/docs/assets/js/12.8c3fe05c.js"><link rel="prefetch" href="/docs/assets/js/13.32b8501e.js"><link rel="prefetch" href="/docs/assets/js/14.7cbead99.js"><link rel="prefetch" href="/docs/assets/js/15.5ca6d375.js"><link rel="prefetch" href="/docs/assets/js/16.7b1d893e.js"><link rel="prefetch" href="/docs/assets/js/17.8243e47c.js"><link rel="prefetch" href="/docs/assets/js/19.e16fd372.js"><link rel="prefetch" href="/docs/assets/js/20.12825b32.js"><link rel="prefetch" href="/docs/assets/js/21.d2e3ba19.js"><link rel="prefetch" href="/docs/assets/js/22.a091a3f3.js"><link rel="prefetch" href="/docs/assets/js/23.1829b4d2.js"><link rel="prefetch" href="/docs/assets/js/24.41ea6154.js"><link rel="prefetch" href="/docs/assets/js/25.d944d918.js"><link rel="prefetch" href="/docs/assets/js/26.f9ba23ac.js"><link rel="prefetch" href="/docs/assets/js/27.33228142.js"><link rel="prefetch" href="/docs/assets/js/28.cc4b94e6.js"><link rel="prefetch" href="/docs/assets/js/29.e183b477.js"><link rel="prefetch" href="/docs/assets/js/3.ce6400d4.js"><link rel="prefetch" href="/docs/assets/js/30.f2b86e7a.js"><link rel="prefetch" href="/docs/assets/js/31.75faa4ac.js"><link rel="prefetch" href="/docs/assets/js/32.1813d3da.js"><link rel="prefetch" href="/docs/assets/js/33.c64ac273.js"><link rel="prefetch" href="/docs/assets/js/34.d54f07d6.js"><link rel="prefetch" href="/docs/assets/js/35.c6b17c27.js"><link rel="prefetch" href="/docs/assets/js/36.93273509.js"><link rel="prefetch" href="/docs/assets/js/37.f4f46233.js"><link rel="prefetch" href="/docs/assets/js/38.fa9900ec.js"><link rel="prefetch" href="/docs/assets/js/39.3b24b23d.js"><link rel="prefetch" href="/docs/assets/js/4.9b8751d4.js"><link rel="prefetch" href="/docs/assets/js/40.5728cc60.js"><link rel="prefetch" href="/docs/assets/js/41.9e47e643.js"><link rel="prefetch" href="/docs/assets/js/42.2cd430a0.js"><link rel="prefetch" href="/docs/assets/js/43.0e9a4cd9.js"><link rel="prefetch" href="/docs/assets/js/44.ec5e25b6.js"><link rel="prefetch" href="/docs/assets/js/45.4cdd4bf1.js"><link rel="prefetch" href="/docs/assets/js/46.b8a5de46.js"><link rel="prefetch" href="/docs/assets/js/47.544a1352.js"><link rel="prefetch" href="/docs/assets/js/48.75ab366d.js"><link rel="prefetch" href="/docs/assets/js/49.59e58f04.js"><link rel="prefetch" href="/docs/assets/js/5.6d67c780.js"><link rel="prefetch" href="/docs/assets/js/50.96ea067f.js"><link rel="prefetch" href="/docs/assets/js/51.144bb382.js"><link rel="prefetch" href="/docs/assets/js/52.8d9aac06.js"><link rel="prefetch" href="/docs/assets/js/53.06e2c5d4.js"><link rel="prefetch" href="/docs/assets/js/54.2d17b229.js"><link rel="prefetch" href="/docs/assets/js/55.7cda8245.js"><link rel="prefetch" href="/docs/assets/js/56.133756ab.js"><link rel="prefetch" href="/docs/assets/js/57.74959c99.js"><link rel="prefetch" href="/docs/assets/js/58.18ff2b44.js"><link rel="prefetch" href="/docs/assets/js/59.b35de2b8.js"><link rel="prefetch" href="/docs/assets/js/6.c3ae577d.js"><link rel="prefetch" href="/docs/assets/js/60.39380f27.js"><link rel="prefetch" href="/docs/assets/js/61.48b5f2aa.js"><link rel="prefetch" href="/docs/assets/js/62.c62037f3.js"><link rel="prefetch" href="/docs/assets/js/63.a439b062.js"><link rel="prefetch" href="/docs/assets/js/64.c24f247a.js"><link rel="prefetch" href="/docs/assets/js/65.e1fa1286.js"><link rel="prefetch" href="/docs/assets/js/66.313ff872.js"><link rel="prefetch" href="/docs/assets/js/67.b8bfc1ca.js"><link rel="prefetch" href="/docs/assets/js/68.f81bf7a5.js"><link rel="prefetch" href="/docs/assets/js/69.c420ebd2.js"><link rel="prefetch" href="/docs/assets/js/7.5229be7a.js"><link rel="prefetch" href="/docs/assets/js/70.f4bec417.js"><link rel="prefetch" href="/docs/assets/js/71.40db7b8a.js"><link rel="prefetch" href="/docs/assets/js/72.f297dce6.js"><link rel="prefetch" href="/docs/assets/js/73.2d73f227.js"><link rel="prefetch" href="/docs/assets/js/74.735fb235.js"><link rel="prefetch" href="/docs/assets/js/75.50f07148.js"><link rel="prefetch" href="/docs/assets/js/76.89a73abf.js"><link rel="prefetch" href="/docs/assets/js/77.66ba0d1e.js"><link rel="prefetch" href="/docs/assets/js/78.81c41079.js"><link rel="prefetch" href="/docs/assets/js/79.14a4fcbf.js"><link rel="prefetch" href="/docs/assets/js/8.30d4ce7d.js"><link rel="prefetch" href="/docs/assets/js/80.af5d096b.js"><link rel="prefetch" href="/docs/assets/js/81.4eccd1c7.js"><link rel="prefetch" href="/docs/assets/js/82.d069817a.js"><link rel="prefetch" href="/docs/assets/js/83.495cd329.js"><link rel="prefetch" href="/docs/assets/js/84.9489494e.js"><link rel="prefetch" href="/docs/assets/js/85.e4406d55.js"><link rel="prefetch" href="/docs/assets/js/86.71cff966.js"><link rel="prefetch" href="/docs/assets/js/87.5eba7956.js"><link rel="prefetch" href="/docs/assets/js/88.6670820c.js"><link rel="prefetch" href="/docs/assets/js/89.cc537610.js"><link rel="prefetch" href="/docs/assets/js/9.99b7e418.js"><link rel="prefetch" href="/docs/assets/js/90.6ccfe07d.js">
+    <link rel="stylesheet" href="/docs/assets/css/0.styles.767e998a.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/docs/" class="home-link router-link-active"><img src="/docs/favicon.svg" alt="能量蓄水池" class="logo"> <span class="site-name can-hide">能量蓄水池</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/docs/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/docs/about/" class="nav-link">
+  关于
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="技术" class="dropdown-title"><span class="title">技术</span> <span class="arrow down"></span></button> <button type="button" aria-label="技术" class="mobile-dropdown-title"><span class="title">技术</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/technology/1. 前端/" class="nav-link">
+  前端
+</a></li><li class="dropdown-item"><!----> <a href="/docs/technology/2. 服务端/" class="nav-link">
+  服务端
+</a></li><li class="dropdown-item"><!----> <a href="/docs/technology/3. 其它/" class="nav-link">
+  其它
+</a></li></ul></div></div><div class="nav-item"><a href="/docs/life/" class="nav-link">
+  生活杂记
+</a></div><div class="nav-item"><a href="/docs/other/" class="nav-link">
+  其它
+</a></div> <a href="https://github.com/jerryzhangjie/docs" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/docs/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/docs/about/" class="nav-link">
+  关于
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="技术" class="dropdown-title"><span class="title">技术</span> <span class="arrow down"></span></button> <button type="button" aria-label="技术" class="mobile-dropdown-title"><span class="title">技术</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/technology/1. 前端/" class="nav-link">
+  前端
+</a></li><li class="dropdown-item"><!----> <a href="/docs/technology/2. 服务端/" class="nav-link">
+  服务端
+</a></li><li class="dropdown-item"><!----> <a href="/docs/technology/3. 其它/" class="nav-link">
+  其它
+</a></li></ul></div></div><div class="nav-item"><a href="/docs/life/" class="nav-link">
+  生活杂记
+</a></div><div class="nav-item"><a href="/docs/other/" class="nav-link">
+  其它
+</a></div> <a href="https://github.com/jerryzhangjie/docs" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>1.1 基础 - ECMAScript</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/docs/technology/1. 前端/1.1 基础 - ECMAScript/AST抽象语法树.html" class="sidebar-link">AST抽象语法树</a></li><li><a href="/docs/technology/1. 前端/1.1 基础 - ECMAScript/DOM事件.html" class="sidebar-link">DOM事件</a></li><li><a href="/docs/technology/1. 前端/1.1 基础 - ECMAScript/for_in与for_of.html" class="sidebar-link">for_in与for_of</a></li><li><a href="/docs/technology/1. 前端/1.1 基础 - ECMAScript/JS 运行机制.html" class="sidebar-link">JS 运行机制</a></li><li><a href="/docs/technology/1. 前端/1.1 基础 - ECMAScript/this.html" class="sidebar-link">this</a></li><li><a href="/docs/technology/1. 前端/1.1 基础 - ECMAScript/多学一点点.html" class="sidebar-link">多学一点点</a></li><li><a href="/docs/technology/1. 前端/1.1 基础 - ECMAScript/字符串和数组常用方法.html" class="sidebar-link">字符串和数组常用方法</a></li><li><a href="/docs/technology/1. 前端/1.1 基础 - ECMAScript/执行上下文、作用域以及闭包.html" class="active sidebar-link">执行上下文、作用域以及闭包</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/docs/technology/1. 前端/1.1 基础 - ECMAScript/执行上下文、作用域以及闭包.html#一、-执行上下文" class="sidebar-link">一、 执行上下文</a></li><li class="sidebar-sub-header"><a href="/docs/technology/1. 前端/1.1 基础 - ECMAScript/执行上下文、作用域以及闭包.html#二、-作用域" class="sidebar-link">二、 作用域</a></li><li class="sidebar-sub-header"><a href="/docs/technology/1. 前端/1.1 基础 - ECMAScript/执行上下文、作用域以及闭包.html#三、-闭包" class="sidebar-link">三、 闭包</a></li><li class="sidebar-sub-header"><a href="/docs/technology/1. 前端/1.1 基础 - ECMAScript/执行上下文、作用域以及闭包.html#四、综述" class="sidebar-link">四、综述</a></li></ul></li><li><a href="/docs/technology/1. 前端/1.1 基础 - ECMAScript/欺骗词法作用域.html" class="sidebar-link">欺骗词法作用域</a></li><li><a href="/docs/technology/1. 前端/1.1 基础 - ECMAScript/深入理解原型及原型链.html" class="sidebar-link">深入理解原型及原型链</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>1.2 基础 - CSS</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>1.3 基础 - HTML</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>1.4 浏览器</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>1.5 网络</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>1.6 设计模式</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>1.7 算法</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>1.8 框架</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>1.9 实践及总结</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>1.10 工程化</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>1.11 Other</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="一、-执行上下文"><a href="#一、-执行上下文" class="header-anchor">#</a> 一、 执行上下文</h2> <p>js引擎在执行每个代码段（全局代码、函数体）前，浏览器已经做了一些“准备工作”（预编译）：</p> <p><strong>全局代码</strong></p> <ol><li>变量、函数表达式 —— 仅声明不赋值（默认赋值undefined）</li> <li>this —— 赋值</li> <li>函数声明 —— 赋值</li></ol> <p><strong>函数体</strong></p> <ol start="4"><li>参数 —— 赋值</li> <li>arguments —— 赋值</li> <li>自由变量的取值作用域 —— 赋值 （注：自由变量的取值是在函数定义时而非函数执行时确定的）</li></ol> <p>经过以上“准备工作”就生成了执行上下文（执行上下文环境），所以可以给执行上下文下个定义：</p> <blockquote><p>执行代码段之前（预编译阶段），对所有变量或函数声明进行赋值（有些默认赋值undefined），所形成的环境就是执行上下文环境。</p></blockquote> <p>上述两种代码段分别形成了<strong>全局执行上下文</strong>和<strong>函数块执行上下文</strong>，当函数调用完成时，对应的执行上下文及其中的变量就会被销毁，再重新回到全局执行上下文环境，处于活动状态的执行上下文只有一个。而这种压栈出栈形成的数据栈就是<strong>执行上下文栈</strong>。</p> <h2 id="二、-作用域"><a href="#二、-作用域" class="header-anchor">#</a> 二、 作用域</h2> <p>JS作用域分为：全局作用域、函数作用域、块作用域(ES6)。<br>
+函数作用域在函数定义时就确定了，而不是函数调用时。<br>
+作用域最大的用处就是隔离变量，不同作用域下同名变量不会有冲突。</p> <p><strong>自由变量：</strong> 在 B 作用域中使用了变量 x，却未在 B 作用域中定义，那么 x 就称为 B 作用域的自由变量。<br>
+自由变量 x 应该到创建 B 作用域的那个作用域（假设为 A 作用域）中取值。若 A 作用域中也未定义变量 x，则继续到创建 A 作用的那个作用域中寻找，直至寻找到全局作用域，这就是<strong>作用域链</strong>。</p> <p>总结：</p> <ol><li>作用域是一个区域，用于隔离变量的有效范围。它是在定义时确定的，与是否调用无关。</li> <li>执行上下文是预编译后，由所有变量和函数所组成的变量环境。它是在调用时确定的，不同的调用会产生不同的执行上下文。</li> <li>沿着定义时形成的作用域包含关系，向上寻找自由变量取值的方式，就是作用域链。</li></ol> <p>注：沿着作用域链查找变量，但实际是到变量所在的执行上下文的 VO（变量对象）中取到变量的值。</p> <h2 id="三、-闭包"><a href="#三、-闭包" class="header-anchor">#</a> 三、 闭包</h2> <p>由于作用域链的存在，我们很容易理解下边的代码：</p> <div class="language- extra-class"><pre><code>// 全局作用域 A
+var a = 6;
+function fn() {
+  // 函数作用域 B
+  var b = 8;
+  console.log(a + b);
+}
+fn();   // 14
+</code></pre></div><p>因为作用域 B 中的 a 是自由变量，所以要到定义 B 的 A 中寻找 a 的取值，即在正常作用域链中，函数内部可以取到函数外部的变量值，反之则不行。<br>
+那么，有没有办法让函数外部取到函数内部的变量呢？ —— 这就是闭包所要实现的功能</p> <p>闭包有两种情况：函数作为返回值，函数作为传参。
+<strong>函数作为返回值</strong></p> <div class="language- extra-class"><pre><code>// 全局作用域 A
+function fn() {
+    // 函数作用域 B
+    var a = 6;
+    return function getA() {
+        // 函数作用域 C
+        console.log(a)
+    }
+}
+var f1 = fn()
+f1()    // 6
+</code></pre></div><p><strong>函数作为传参</strong></p> <div class="language- extra-class"><pre><code>var a = 6,
+    getA = function() {
+        // 函数作用域 B
+        console.log(a)
+    }
+(function fn(f) {
+    // 函数作用域 A
+    var a = 8
+    f()   // 6
+})(getA)
+</code></pre></div><p>要讲清楚闭包实现的原理，就要结合作用域和执行上下文来理解。</p> <p>以第一种情况为例：</p> <ol><li><p>作用域是在定义时形成的，自由变量会沿作用域链寻找取值。<br>
+定义时形成了作用域 A、B、C，且 a 是 C 中的自由变量，所以 a 可以沿着作用域链找到 6。</p></li> <li><p>执行上下文是在调用时的预编译形成的，执行结束后就会销毁。</p> <ul><li>当代码开始执行时，全局执行上下文入栈，处于活动状态；</li> <li>当执行 var f1 = fn() 时，fn执行上下文入栈，处于活动状态；</li> <li>执行完 var f1 = fn()，正常来说应该销毁fn执行上下文，但返回了一个函数getA，并引用了fn作用域下的fn执行上下文中的变量a，因为被引用那么a不能被销毁，所以a所在的fn执行上下文不能被销毁，依然存在于执行上下文栈中。这个被返回的函数getA就是闭包。(所以说闭包会增加内容开销，使用不慎会导致内存泄漏)</li> <li>当执行 f1() 时，即在执行闭包getA，getA执行上下文入栈，并处于活动状态，由上分析可知，getA中的自由变量a可沿作用域链找到fn执行上下文中的a的值，即为6。</li> <li>执行完 f1，getA执行上下文、fn执行上下文、全局执行上下文依次出栈并销毁。</li></ul></li></ol> <h2 id="四、综述"><a href="#四、综述" class="header-anchor">#</a> 四、综述</h2> <h3 id="_1-什么是闭包"><a href="#_1-什么是闭包" class="header-anchor">#</a> 1. 什么是闭包？</h3> <ul><li>从功能上来讲，闭包可以简单理解成“可以读取其它函数内部变量的函数”；从形式上来讲，通常是“定义在一个函数内部的函数”或者“被作为参数传入另一个函数中的函数”。</li> <li>闭包的实现原理与作用域及执行上下文密切相关。正常情况下，当代码执行结束时相应的执行上下文就会销毁，但是当闭包中的自由变量引用了上游作用域中的变量时，上游作用域对应的执行上下文就无法销毁，那么当闭包函数执行时，就能获取到上游作用域对应执行上下文中的变量。</li> <li>闭包会使得函数中的变量被保存在内存中，增加内存消耗，一旦滥用，会造成网页性能问题。</li></ul> <h3 id="_2-闭包会导致内存泄漏吗"><a href="#_2-闭包会导致内存泄漏吗" class="header-anchor">#</a> 2. 闭包会导致内存泄漏吗？</h3> <p>根据司徒正美的一篇文章 <a href="https://www.cnblogs.com/rubylouvre/p/3345294.html" target="_blank" rel="noopener noreferrer">js闭包测试<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>，结合个人理解得出以下结论：</p> <ul><li><p>内存泄漏与闭包本身没有关系，而是因为不同浏览器的js引擎，对闭包情形下采用了不同的垃圾回收策略；</p></li> <li><p>举例来说，对于以下情形：</p> <div class="language- extra-class"><pre><code>  function outer() {
+      var a = {xxx}
+      var b = 'bbb'
+      return function() {
+          console.log(b)      // 闭包中只使用了父作用域中的 b，直观理解未使用 a，执行var inner = outer()后，a 应该被垃圾回收机制回收
+      }
+  }
+
+  var inner = outer()
+</code></pre></div><p>对于 IE8 (JScript) 及以下版本，执行 var inner = outer() 后，a 依然存在于内存中，当大量执行 var inner = outer() 后将暂用大量内存资源，甚至导致内存泄漏；<br>
+对于 chrome (V8)，执行 var inner = outer() 后，a 不存在了。</p></li> <li><p>针对 IE8 (JScript) 及以下版本因垃圾回收机制导致的内存泄漏，可采取以下措施：</p> <div class="language- extra-class"><pre><code>  function outer() {
+      var a = {xxx}
+      var b = 'bbb'
+
+      // 退出函数之前，将闭包中不使用的变量删除
+      a = null
+
+      return function() {
+          console.log(b)
+      }
+  }
+
+  var inner = outer()
+</code></pre></div></li></ul> <h3 id="_3-闭包的应用场景"><a href="#_3-闭包的应用场景" class="header-anchor">#</a> 3. 闭包的应用场景？</h3> <ol><li><p>封装私有变量</p> <div class="language- extra-class"><pre><code> function f1() {
+     var sum = 0;
+     var obj = {
+         inc:function () {
+             sum++;
+             return sum;
+         }
+     };
+     return obj;
+ }
+ var result = f1();
+ console.log(result.inc());  //1
+ console.log(result.inc());  //2
+ console.log(result.inc());  //3
+</code></pre></div></li> <li><p>setTimeout 或 事件回调 传参数<br>
+原生的setTimeout传递的第一个函数不能带参数，通过闭包可以实现传参效果</p> <div class="language- extra-class"><pre><code> function f1(a) {
+     function f2() {     // 这是实际想传给setTimeout的函数
+         console.log(a);
+     }
+     return f2;
+ }
+ var fun = f1(1);
+ setTimeout(fun, 1000);  // setTimeout不支持直接传参 f2(1)
+</code></pre></div><p>与setTimeout类似，原生的addEventListener传递的回调函数不能带参数，通过闭包可以实现传参效果</p> <div class="language- extra-class"><pre><code> function changeSize(size){
+     return function(){
+         document.body.style.fontSize = size + 'px';
+     };
+ }
+
+ var size12 = changeSize(12);
+ var size14 = changeSize(20);
+ var size16 = changeSize(30);
+
+ document.getElementById('size-12').addEventListener(size12)
+ document.getElementById('size-20').addEventListener(size20)
+ document.getElementById('size-30').addEventListener(size30)
+</code></pre></div></li> <li><p>事件防抖中计时</p> <p>事件触发n秒后再执行回调，如果n秒内再次被触发，则重新计时。<br>
+由于需要一个变量保存计时，为了保持全局纯净，可以借助闭包来实现。</p> <div class="language- extra-class"><pre><code> // fn 需要防抖的函数
+ // delay 需要延迟触发的时间
+ function debounce(fn, delay) {
+     let timer = null
+     return function() {
+         if (timer) {
+             clearTimeout(timer)
+         }
+         timer = setTimerout(fn, delay)
+     }
+ }
+
+ // 使用
+ function fn() {...}
+ let fun = debounce(fn, 100)
+ document.querySelector('#btn').addEventListener(fun)
+</code></pre></div></li></ol></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">最后更新时间:</span> <span class="time">3/28/2021, 9:04:52 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/docs/technology/1. 前端/1.1 基础 - ECMAScript/字符串和数组常用方法.html" class="prev">
+        字符串和数组常用方法
+      </a></span> <span class="next"><a href="/docs/technology/1. 前端/1.1 基础 - ECMAScript/欺骗词法作用域.html">
+        欺骗词法作用域
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/docs/assets/js/app.574fc7ba.js" defer></script><script src="/docs/assets/js/2.438c9cc2.js" defer></script><script src="/docs/assets/js/18.f795c9b4.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>能量蓄水池</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/docs/favicon.svg">
+    <meta name="description" content="学习笔记、知识文档、经验总结、生活杂记。">
+    
+    <link rel="preload" href="/docs/assets/css/0.styles.767e998a.css" as="style"><link rel="preload" href="/docs/assets/js/app.574fc7ba.js" as="script"><link rel="preload" href="/docs/assets/js/2.438c9cc2.js" as="script"><link rel="preload" href="/docs/assets/js/16.7b1d893e.js" as="script"><link rel="prefetch" href="/docs/assets/js/10.782efd2f.js"><link rel="prefetch" href="/docs/assets/js/11.9a017d0a.js"><link rel="prefetch" href="/docs/assets/js/12.8c3fe05c.js"><link rel="prefetch" href="/docs/assets/js/13.32b8501e.js"><link rel="prefetch" href="/docs/assets/js/14.7cbead99.js"><link rel="prefetch" href="/docs/assets/js/15.5ca6d375.js"><link rel="prefetch" href="/docs/assets/js/17.8243e47c.js"><link rel="prefetch" href="/docs/assets/js/18.f795c9b4.js"><link rel="prefetch" href="/docs/assets/js/19.e16fd372.js"><link rel="prefetch" href="/docs/assets/js/20.12825b32.js"><link rel="prefetch" href="/docs/assets/js/21.d2e3ba19.js"><link rel="prefetch" href="/docs/assets/js/22.a091a3f3.js"><link rel="prefetch" href="/docs/assets/js/23.1829b4d2.js"><link rel="prefetch" href="/docs/assets/js/24.41ea6154.js"><link rel="prefetch" href="/docs/assets/js/25.d944d918.js"><link rel="prefetch" href="/docs/assets/js/26.f9ba23ac.js"><link rel="prefetch" href="/docs/assets/js/27.33228142.js"><link rel="prefetch" href="/docs/assets/js/28.cc4b94e6.js"><link rel="prefetch" href="/docs/assets/js/29.e183b477.js"><link rel="prefetch" href="/docs/assets/js/3.ce6400d4.js"><link rel="prefetch" href="/docs/assets/js/30.f2b86e7a.js"><link rel="prefetch" href="/docs/assets/js/31.75faa4ac.js"><link rel="prefetch" href="/docs/assets/js/32.1813d3da.js"><link rel="prefetch" href="/docs/assets/js/33.c64ac273.js"><link rel="prefetch" href="/docs/assets/js/34.d54f07d6.js"><link rel="prefetch" href="/docs/assets/js/35.c6b17c27.js"><link rel="prefetch" href="/docs/assets/js/36.93273509.js"><link rel="prefetch" href="/docs/assets/js/37.f4f46233.js"><link rel="prefetch" href="/docs/assets/js/38.fa9900ec.js"><link rel="prefetch" href="/docs/assets/js/39.3b24b23d.js"><link rel="prefetch" href="/docs/assets/js/4.9b8751d4.js"><link rel="prefetch" href="/docs/assets/js/40.5728cc60.js"><link rel="prefetch" href="/docs/assets/js/41.9e47e643.js"><link rel="prefetch" href="/docs/assets/js/42.2cd430a0.js"><link rel="prefetch" href="/docs/assets/js/43.0e9a4cd9.js"><link rel="prefetch" href="/docs/assets/js/44.ec5e25b6.js"><link rel="prefetch" href="/docs/assets/js/45.4cdd4bf1.js"><link rel="prefetch" href="/docs/assets/js/46.b8a5de46.js"><link rel="prefetch" href="/docs/assets/js/47.544a1352.js"><link rel="prefetch" href="/docs/assets/js/48.75ab366d.js"><link rel="prefetch" href="/docs/assets/js/49.59e58f04.js"><link rel="prefetch" href="/docs/assets/js/5.6d67c780.js"><link rel="prefetch" href="/docs/assets/js/50.96ea067f.js"><link rel="prefetch" href="/docs/assets/js/51.144bb382.js"><link rel="prefetch" href="/docs/assets/js/52.8d9aac06.js"><link rel="prefetch" href="/docs/assets/js/53.06e2c5d4.js"><link rel="prefetch" href="/docs/assets/js/54.2d17b229.js"><link rel="prefetch" href="/docs/assets/js/55.7cda8245.js"><link rel="prefetch" href="/docs/assets/js/56.133756ab.js"><link rel="prefetch" href="/docs/assets/js/57.74959c99.js"><link rel="prefetch" href="/docs/assets/js/58.18ff2b44.js"><link rel="prefetch" href="/docs/assets/js/59.b35de2b8.js"><link rel="prefetch" href="/docs/assets/js/6.c3ae577d.js"><link rel="prefetch" href="/docs/assets/js/60.39380f27.js"><link rel="prefetch" href="/docs/assets/js/61.48b5f2aa.js"><link rel="prefetch" href="/docs/assets/js/62.c62037f3.js"><link rel="prefetch" href="/docs/assets/js/63.a439b062.js"><link rel="prefetch" href="/docs/assets/js/64.c24f247a.js"><link rel="prefetch" href="/docs/assets/js/65.e1fa1286.js"><link rel="prefetch" href="/docs/assets/js/66.313ff872.js"><link rel="prefetch" href="/docs/assets/js/67.b8bfc1ca.js"><link rel="prefetch" href="/docs/assets/js/68.f81bf7a5.js"><link rel="prefetch" href="/docs/assets/js/69.c420ebd2.js"><link rel="prefetch" href="/docs/assets/js/7.5229be7a.js"><link rel="prefetch" href="/docs/assets/js/70.f4bec417.js"><link rel="prefetch" href="/docs/assets/js/71.40db7b8a.js"><link rel="prefetch" href="/docs/assets/js/72.f297dce6.js"><link rel="prefetch" href="/docs/assets/js/73.2d73f227.js"><link rel="prefetch" href="/docs/assets/js/74.735fb235.js"><link rel="prefetch" href="/docs/assets/js/75.50f07148.js"><link rel="prefetch" href="/docs/assets/js/76.89a73abf.js"><link rel="prefetch" href="/docs/assets/js/77.66ba0d1e.js"><link rel="prefetch" href="/docs/assets/js/78.81c41079.js"><link rel="prefetch" href="/docs/assets/js/79.14a4fcbf.js"><link rel="prefetch" href="/docs/assets/js/8.30d4ce7d.js"><link rel="prefetch" href="/docs/assets/js/80.af5d096b.js"><link rel="prefetch" href="/docs/assets/js/81.4eccd1c7.js"><link rel="prefetch" href="/docs/assets/js/82.d069817a.js"><link rel="prefetch" href="/docs/assets/js/83.495cd329.js"><link rel="prefetch" href="/docs/assets/js/84.9489494e.js"><link rel="prefetch" href="/docs/assets/js/85.e4406d55.js"><link rel="prefetch" href="/docs/assets/js/86.71cff966.js"><link rel="prefetch" href="/docs/assets/js/87.5eba7956.js"><link rel="prefetch" href="/docs/assets/js/88.6670820c.js"><link rel="prefetch" href="/docs/assets/js/89.cc537610.js"><link rel="prefetch" href="/docs/assets/js/9.99b7e418.js"><link rel="prefetch" href="/docs/assets/js/90.6ccfe07d.js">
+    <link rel="stylesheet" href="/docs/assets/css/0.styles.767e998a.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/docs/" class="home-link router-link-active"><img src="/docs/favicon.svg" alt="能量蓄水池" class="logo"> <span class="site-name can-hide">能量蓄水池</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/docs/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/docs/about/" class="nav-link">
+  关于
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="技术" class="dropdown-title"><span class="title">技术</span> <span class="arrow down"></span></button> <button type="button" aria-label="技术" class="mobile-dropdown-title"><span class="title">技术</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/technology/1. 前端/" class="nav-link">
+  前端
+</a></li><li class="dropdown-item"><!----> <a href="/docs/technology/2. 服务端/" class="nav-link">
+  服务端
+</a></li><li class="dropdown-item"><!----> <a href="/docs/technology/3. 其它/" class="nav-link">
+  其它
+</a></li></ul></div></div><div class="nav-item"><a href="/docs/life/" class="nav-link">
+  生活杂记
+</a></div><div class="nav-item"><a href="/docs/other/" class="nav-link">
+  其它
+</a></div> <a href="https://github.com/jerryzhangjie/docs" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/docs/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/docs/about/" class="nav-link">
+  关于
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="技术" class="dropdown-title"><span class="title">技术</span> <span class="arrow down"></span></button> <button type="button" aria-label="技术" class="mobile-dropdown-title"><span class="title">技术</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/technology/1. 前端/" class="nav-link">
+  前端
+</a></li><li class="dropdown-item"><!----> <a href="/docs/technology/2. 服务端/" class="nav-link">
+  服务端
+</a></li><li class="dropdown-item"><!----> <a href="/docs/technology/3. 其它/" class="nav-link">
+  其它
+</a></li></ul></div></div><div class="nav-item"><a href="/docs/life/" class="nav-link">
+  生活杂记
+</a></div><div class="nav-item"><a href="/docs/other/" class="nav-link">
+  其它
+</a></div> <a href="https://github.com/jerryzhangjie/docs" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>1.1 基础 - ECMAScript</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/docs/technology/1. 前端/1.1 基础 - ECMAScript/AST抽象语法树.html" class="sidebar-link">AST抽象语法树</a></li><li><a href="/docs/technology/1. 前端/1.1 基础 - ECMAScript/DOM事件.html" class="sidebar-link">DOM事件</a></li><li><a href="/docs/technology/1. 前端/1.1 基础 - ECMAScript/for_in与for_of.html" class="sidebar-link">for_in与for_of</a></li><li><a href="/docs/technology/1. 前端/1.1 基础 - ECMAScript/JS 运行机制.html" class="sidebar-link">JS 运行机制</a></li><li><a href="/docs/technology/1. 前端/1.1 基础 - ECMAScript/this.html" class="sidebar-link">this</a></li><li><a href="/docs/technology/1. 前端/1.1 基础 - ECMAScript/多学一点点.html" class="active sidebar-link">多学一点点</a></li><li><a href="/docs/technology/1. 前端/1.1 基础 - ECMAScript/字符串和数组常用方法.html" class="sidebar-link">字符串和数组常用方法</a></li><li><a href="/docs/technology/1. 前端/1.1 基础 - ECMAScript/执行上下文、作用域以及闭包.html" class="sidebar-link">执行上下文、作用域以及闭包</a></li><li><a href="/docs/technology/1. 前端/1.1 基础 - ECMAScript/欺骗词法作用域.html" class="sidebar-link">欺骗词法作用域</a></li><li><a href="/docs/technology/1. 前端/1.1 基础 - ECMAScript/深入理解原型及原型链.html" class="sidebar-link">深入理解原型及原型链</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>1.2 基础 - CSS</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>1.3 基础 - HTML</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>1.4 浏览器</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>1.5 网络</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>1.6 设计模式</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>1.7 算法</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>1.8 框架</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>1.9 实践及总结</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>1.10 工程化</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>1.11 Other</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><ol><li><p><code>document.querySelector('#app')</code>与<code>document.getElementById('app')</code>有什么区别？</p> <div class="language- extra-class"><pre><code> &lt;ul&gt;
+     &lt;li&gt;111&lt;/li&gt;
+     &lt;li&gt;222&lt;/li&gt;
+     &lt;li&gt;333&lt;/li&gt;
+ &lt;/ul&gt;
+
+ //`document.querySelector('#app')`选出的元素是静态的：
+ &lt;script&gt;
+     var ul = document.querySelector('ul');
+     var list = ul.querySelectorAll('li');
+     //又创建了5个新的li，添加在ul列表上。
+     for (var i = 0; i &lt; 5; i++) {
+         ul.appendChild(document.createElement('li'));
+     }
+     console.log(list.length)  // 仍然是3
+ &lt;/script&gt;
+
+ // `document.getElementById('app')`是动态的
+ &lt;script&gt;
+     var ul = document.getElementsByTagName('ul')[0];
+     var list = ul.getElementsByTagName('li');
+     //又创建了5个新的li，添加在ul列表上。
+     for (var i = 0; i &lt; 5; i++) {
+         ul.appendChild(document.createElement('li'));
+     }
+     console.log(list.length)  // 变成了8
+ &lt;/script&gt;
+</code></pre></div><p>同理可推广到：<code>document.querySelectorAll</code>、<code>document.getElementsByClassName</code>、<code>document.getElementsByTagName</code></p></li></ol> <p>/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */</p> <ol start="2"><li><p><code>dom</code>对象与<code>jQuery</code>对象互转</p> <div class="language- extra-class"><pre><code> var pDom = document.querySelectorAll('p')
+ var $pDom = $('p')
+ 
+ // dom 转 jQuery
+ var $pDom1 = $(pDom)
+
+ // jQuery 转 dom，分两种情况
+ // 情况一：jQuery 对象只含有一个元素，例如 $('#p')
+ var pDom1 = $pDom[0]      // 方法1
+ var pDom2 = $pDom.get(0)  // 方法2
+ // 情况二：jQuery 对象含有多个元素，例如 $('p')
+ var pDom1 = []
+ var len = $pDom.length
+ for(var i = 0; i &lt; len; i++) {
+     pDom1.push($pDom[i])
+ }
+</code></pre></div></li></ol> <p>/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */</p> <ol start="3"><li><p>实现动画效果</p> <div class="language- extra-class"><pre><code> // CSS
+ .box {
+     position: relative; // relative、absolute、fixed之一
+     animation: mymove 5s infinite;
+ }
+ @keyframes mymove {
+     from {
+         left: 0;
+     }
+     to {
+         left: 200px;
+     }
+ }
+
+ // js —— 定时器
+ let box = document.querySelector('.box')
+ let flag = true
+ let left = 0
+ setInterval(() =&gt; {
+     left === 0 ? flag = true : (left === 100 ? flag = false : '')
+     flag ? box.style.left = `${left++}px` : box.style.left = `${left--}px`
+ }, 1000 / 60)
+
+ // js —— requestAnimationFrame
+ let box = document.getElementById(&quot;.box&quot;);
+ let flag = true;
+ let left = 0;
+ function render() {
+     left == 0 ? flag = true : left == 100 ? flag = false : '';
+     flag ? box.style.left = ` ${left++}px` : box.style.left = ` ${left--}px`;
+ }
+ let requestAnimFrame = (function(){     //兼容性处理
+     return  window.requestAnimationFrame       ||
+             window.webkitRequestAnimationFrame ||
+             window.mozRequestAnimationFrame    ||
+             function(callback){
+                 window.setTimeout(callback, 1000 / 60);
+             };
+ })();
+ (function animloop() {
+     render();
+     requestAnimFrame(animloop);
+ })();
+</code></pre></div><p>两种js实现方案对比：<br>
+渲染帧是指浏览器一次完整绘制过程，帧之间的时间间隔是DOM视图更新的最小间隔。由于主流的屏幕刷新率都在60hz，因此渲染一帧的时间就必须控制在16.7ms内才能保证不掉帧。也就是说每一次渲染都要在 16.7ms 内页面才够流畅不会有卡顿感。这段时间内浏览器需要完成如下事情：</p> <ul><li>js执行：脚本造成了需要重绘的改动，比如增删 DOM、请求动画等</li> <li>样式计算</li> <li>重排和重绘</li></ul> <p>一个帧内要做这么多事情，如果js执行时间过长超过16.7ms，就会丢掉一次帧的绘制，出现卡顿现象。一般一个帧内的多次DOM改动会被合并渲染。</p> <p>window.requestAnimationFrame用于在下一个渲染帧之前执行一个回调函数。可以用来做逐帧动画，这会使你的动画函数先于浏览器重绘动作。通常来说，被调用的频率就是60hz。</p></li></ol> <p>/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */</p> <ol start="4"><li><p>实现一个“沉睡”函数</p> <div class="language- extra-class"><pre><code> function sleep(time) {
+     return new Promise((resolve) =&gt; {
+         setTimeout(resolve, time)
+     })
+ }
+</code></pre></div></li></ol> <p>/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */</p> <ol start="5"><li><p>数组去重</p> <div class="language- extra-class"><pre><code> // 方法一：Set
+ [...new Set([1,1,3,4,2,2])]  或 Array.from(new Set([1,1,3,4,2,2]))
+
+ // 方法二：filter 
+ // 唯一元素的特点：该元素在数组中的索引，与该元素第一次出现时的索引值相同。eg. ['a','b','a'] b的索引是1，b第一次出现时的索引也是1，所以b唯一；但第二个a的索引是2，它第一次出现时的索引却是0，所以a不唯一。
+ function unique(arr) {
+     return arr.filter((item, index, arr) =&gt; {
+         return arr.indexOf(item) === index
+     })
+ }
+
+ // 方法三：双循环
+ function unique(arr) {
+     let res = [arr[0]]
+     for (let i = 1; i &lt; arr.length; i++) {
+         let flag = true
+         for (let j = 0; j &lt; res.length; j++) {
+             if (arr[i] === res[j]) {
+                 flag = false
+                 break
+             }
+         }
+         if (flag) {
+             res.push(arr[i])
+         }
+     }
+     return res
+ }
+
+ // 方法四：对象键值对
+ function unique(arr) {
+     let res = []
+     let obj = {}
+     for (let i = 0; i &lt; arr.length; i++) {
+         if (!obj[arr[i]]) {
+             res.push(arr[i])
+             obj[arr[i]] = 1
+         } else {
+             obj[arr[i]] += 1
+         }
+     }
+     return res
+ }
+
+ // 方法五：检查当前项在后面项中是否包含
+ function unique(arr) {
+     let res = []
+     arr.forEach((item, index, arr) =&gt; {
+         let rightArr = arr.slice(index+1)
+         if (rightArr.indexOf(item) === -1) {
+             res.push(item)
+         }
+     })
+     return res
+ }
+</code></pre></div></li></ol> <p>/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */</p> <ol start="6"><li><p>数组扁平化</p> <div class="language- extra-class"><pre><code> // 方法一：ES6 flat方法 参数默认为1 - 展平一层，Infinity - 无论几层都展成一维。
+ function flatten(array) {
+     return array.flat(Infinity)
+ }
+
+ // 方法二：递归
+ // 普通递归
+ function flatten(array) {
+     let result = []
+     array.forEach((item, i) =&gt; {
+         if (Array.isArray(item)) {
+             result = result.concat(flatten(item))
+         } else {
+             result.push(item)
+         }
+     })
+     return result
+ }
+
+ // reduce递归
+ function flatten(array) {
+     return array.reduce((resultArray, currentValue) =&gt; {
+         currentValue = Array.isArray(currentValue) ? flatten(currentValue) : currentValue
+         return resultArray.concat(currentValue)
+     }, [])
+ }
+
+ // 方法三：解构运算符 + concat ...   
+ // 利用...可以将最外层数组转为逗号分隔的参数序列
+ // 利用concat可以实现将多个参数拼接到数组上 [1,2].concat(3, 4) -&gt; [1,2,3,4]
+ function flatten(array) {
+     while (array.some(item =&gt; Array.isArray(item))) {
+         array = [].concat(...array)
+     }
+     return array
+ }
+
+ // 方法四：toString()  利用其能将数组变成以逗号分隔的字符串特性 [1, [2, [3, [4, 5]]]].toString() -&gt; '1,2,3,4,5'  缺点：仅适用纯数字组成的数组
+ function flatten(array) {
+     let str = array.toString()          // '1,2,3,4,5'
+     let strArray = str.split(',')       // ['1', '2', '3', '4', '5']
+     return strArray.map(item =&gt; +item)    // 隐式类型转换，字符串 -&gt; 数字
+ }
+
+ let ar = flatten([1,2,[3,4,[5,6]]])
+ console.log(ar)
+</code></pre></div></li></ol> <p>/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */</p> <ol start="7"><li>如何避免重定向？</li></ol> <p>/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */</p> <ol start="8"><li><p>类型检查</p> <p>js 数据类型：</p> <ul><li>基本类型：Number、String、Boolean、Undefined、Null、Symbol</li> <li>引用类型：Object（Object、Function、Array、Date、RegExp）</li></ul> <p>typeof判断数据类型：（返回number、string、boolean、undefined、symbol、function、object）</p> <ul><li>对于基本类型，除null外，均可返回正确的结果；</li> <li>对于引用类型，除function外，均返回Object；</li> <li>对于null，返回object；</li> <li>对于function，返回function。</li></ul> <p>instanceof<br>
+用于判断构造函数的 prototype 属性是否出现在对象的原型链中的任意位置<br>
+// 实现</p> <div class="language- extra-class"><pre><code> function myInstanceof(left, right) {
+     let proto = Object.getPrototypeOf(left)
+     let prototype = right.prototype
+     while (true) {
+         if (proto === null) return false    // 函数中的 return 会提前终止函数，即便 return 在循环中
+         if (proto === prototype) return true
+         proto = Object.getPrototypeOf(proto)
+     }
+ }
+</code></pre></div><p>constructor<br>
+对象的 constructor 属性指向 该对象的构造函数，但是这种方式不是很安全，因为 constructor 属性可以被改写</p> <p>toString() 是 Object 的原型方法，调用该方法，默认返回当前数据类型的 [[Class]]，格式为[object Xxx]。不仅适用于Object，基本类型也适用。</p> <div class="language- extra-class"><pre><code> function getType(data) {
+     let typeClass = Object.prototype.toString.call(data)
+     typeClass = typeClass.replace('[', '').replace(']', '')
+     typeClass = typeClass.split(' ')
+     return typeClass[1]
+ }
+</code></pre></div><p>undefined 声明了，但是未定义(未赋值)，可以使用 void 0 来安全的获取 undefined （表达式 void xx 没有返回值，所以返回的是 undefined）
+undeclared 未声明，这种变量直接使用时会报引用错误，如 ReferenceError: a is not defined
+null 代表空对象，常用于初始化对象变量，是个基本类型的值，而 typtof null 为 object 是一个历史问题。</p></li></ol> <p>/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */</p> <ol start="9"><li><p>找到字符串中第一个不重复的元素</p> <div class="language- extra-class"><pre><code> // 正则 当前元素在字符串中只能匹配到一次，则该元素唯一
+ function getFirstUniqueChar(str) {
+     let targetChar = ''
+     for (let x of str) {
+         let reg = new RegExp(`${x}`, 'g')   // 创建正则
+         if (str.match(reg).length == 1) {
+             targetChar = x
+             break
+         }
+     }
+     return targetChar
+ }
+
+ // indexOf 目标元素右边的字符串中不含有该元素，则该元素唯一
+ function getFirstUniqueChar(str) {
+     let targetChar = ''
+     let len = str.length
+     for (let i = 0; i &lt; len; i++) {]
+         let rightStr = str.slice(i+1)
+         if (rightStr.indexOf(str[i]) == -1) {
+             targetChar = str[i]
+             break
+         }
+     }
+     return targetChar
+ }
+</code></pre></div></li></ol> <p>/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */</p> <ol start="10"><li><p>实现依次获取urls接口的返回数据</p> <div class="language- extra-class"><pre><code>function getAllRes(urls) {
+    let pArr = []
+    urls.forEach((url) =&gt; {
+        let p = new Promise((resolve, reject) =&gt; {
+            setTimeout((res) =&gt; {
+                console.log(url)
+                resolve(res)
+            }, 200)
+        })
+        pArr.push(p)
+    })
+
+    Promise.all(pArr).then((results) =&gt; {
+        console.log(results)
+    })
+}
+</code></pre></div></li></ol> <p>/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */</p> <ol start="11"><li><p>数组排序（冒泡、快速、插入）</p> <div class="language- extra-class"><pre><code>// 冒泡排序（双循环，将比当前元素大的元素，与当前元素交换位置，实现大的放到最前边）
+function sort(arr) {
+    let len = arr.length
+    for (let i = 0; i &lt; len - 1; i++) {
+        for (let j = i + 1; j &lt; len - 1; j++) {
+            let temp = ''
+            if (arr[j] &gt; arr[i]) {
+                temp = arr[j]
+                arr[j] = arr[i]
+                arr[i] = temp
+                // ES6   [arr[j], arr[i]] = [arr[i], arr[j]]
+            }
+        }
+    }
+    console.log(arr)
+}
+
+// 插入排序（类比摸扑克牌的过程，每摸到一张，都与手中已有的牌比较，根据大小插入相应的位置）
+function sort(arr) {
+    let handle = []                 // 手中的牌 —— 即最终的排序结果
+    handle.push(arr[0])
+    let len = arr.length
+    for (let i = 1; i &lt; len; i++) {
+        let A = arr[i]              // 最新摸到的一张
+        let handleLen = handle.length
+        for (let j = handleLen - 1; j &gt;= 0; j--) {   // 从手中最后边一张依次向前比较
+            let B = handle[j]       // 手中当前要比较的牌
+            if (A &gt; B) {            // 如果新牌比当前牌大，就放在当前牌后边
+                handle.splice(j + 1, 0, A)
+                break
+            }
+            if (j === 0) {
+                handle.unshift(A)
+            }
+        }
+    }
+    console.log(handle)
+}
+
+// 快速排序（找出中间位置的元素，比中间元素）（在三者中性能最好）
+function sort(arr) {
+    let len = arr.length
+    // 结束递归
+    if (len &lt;= 1) {
+        return arr
+    }
+    // 拿到中间项，并从数组中将中间项去掉(去掉一个后，len变成了len-1)
+    let middleIndex = Math.floor(len / 2)
+    let middleValue = arr.splice(middleIndex, 1)
+    len -= 1
+    // 建立两个数组，比中间项小的放入leftArr，反之放入rightArr
+    let leftArr = [], rightArr = []
+    for (let i = 0; i &lt; len; i++) {
+        let item = arr[i]
+        item &lt; middleValue ? leftArr.push(item) : rightArr.push(item)
+    }
+    return sort(leftArr).concat(middleValue, sort(rightArr))
+}
+</code></pre></div></li></ol> <p>/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */</p> <ol start="12"><li><p>斐波那契数列（1，1，2，3，5，8，13...）</p> <div class="language- extra-class"><pre><code>// 递归
+function fibonacci(n) {
+    if (n === 0 || n === 1) {   // 递归终止条件
+        return 1
+    }
+    return fibonacci(n - 1) + fibonacci(n - 2)
+}
+
+// 依次创建每一项
+function fibonacci(n) {
+    let arr = [1, 1]
+    for (let i = 2; i &lt;= n; i++) {
+        let currentFb = arr[i - 2] + arr[i - 1]
+        arr.push(currentFb)
+    }
+    return arr[n]
+}
+</code></pre></div></li></ol> <p>/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */</p> <ol start="13"><li><p>输入一个正整数 N，输出所有和为 N 的连续正数序列 15 =&gt; [[1,2,3,4,5],[4,5,6],[7,8]]</p> <div class="language- extra-class"><pre><code>// 1.向上取整求中位数，则所求结果肯定不含比中位数大的数，例如 15，中位数8，比中位数大的数9，8+9&gt;15
+// 2.从1开始，尝试逐一累加中位数以下的数
+// 3.连续整数求和公式 (a1+an)*n/2
+function fn(N) {
+    let resultArr = []
+    let middle = Math.ceil(N)   // 中位数
+    for (let i = 1; i &lt;= middle; i++) {
+        for (let j = middle; j &gt; i; j--) {
+            let total = (i+j)*(j-i+1)/2
+            if (total === N) {
+                let result = createArr(i, j)
+                resultArr.push(result)
+                break
+            }
+        }
+    }
+    console.log(resultArr)
+}
+
+function createArr(i, j) {
+    let arr = []
+    for (let item = i; item &lt;= j; item++) {
+        arr.push(item)
+    }
+    return arr
+}
+</code></pre></div></li></ol> <p>/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */</p> <ol start="14"><li>Cookie、Session、Token、sessionStorage、localStorage存储位置</li></ol> <ul><li>Cookie - 本地硬盘</li> <li>Session - 服务器内存</li> <li>Token - localStorage中 - 本地硬盘</li> <li>sessionStorage - 本地内存 (仅在同一窗口中共享，即便相同协议域名端口下的不同窗口也无法共享)</li> <li>localStorage - 本地硬盘 (相同协议域名端口即可共享)</li></ul> <p>/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */</p> <ol start="15"><li><p>base64 转 url</p> <div class="language- extra-class"><pre><code>function base64ToUrl(code) {
+    const parts = code.split(';base64,')
+    const type = parts[0].split(':')[1]
+    const decodeStr = window.atob(parts[1])
+    const decodeStrLen = decodeStr.length
+    const uInt8Array = new Unit8Array(decodeStrLen)
+    for (let i = 0; i &lt; decodeStrLen; i++) {
+        uInt8Array[i] = decodeStr.charCodeAt(i)
+    }
+    const blob = new Blob([uInt8Array], { type })
+    const url = window.URL.createObjectURL(blob)
+    return url
+}
+</code></pre></div></li></ol> <p>/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */</p> <ol start="16"><li><p>ajax</p> <div class="language- extra-class"><pre><code>&lt;!-- 创建对象 --&gt;
+const xhr = new XMLHttpRequest()
+&lt;!-- 建立连接 --&gt;
+xhr.open('get', url, true)
+&lt;!-- 发送请求 --&gt;
+xhr.send()
+&lt;!-- 接收响应 --&gt;
+xhr.onreadystatechange = function() {
+    if (xhr.readyState === 4) {
+        if (xhr.status === 200) {
+            success(xhr.responseText)
+        } else {
+            fail(xhr.status)
+        }
+    }
+}
+</code></pre></div></li></ol> <p>/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */</p> <ol start="17"><li><p>实现一个add方法，使计算结果能够满足如下预期：
+add(1)(2)(3) = 6;
+add(1, 2, 3)(4) = 10;
+add(1)(2)(3)(4)(5) = 15;</p> <div class="language- extra-class"><pre><code>function add() {
+    var _args = Array.prototype.slice.call(arguments)
+    var _adder = function() {
+        _args.push(...arguments)
+        return _adder
+    }
+    _adder.toString = function() {
+        return _args.reduce(function(a, b) {
+            return a + b
+        }, 0)
+    }
+    return _adder
+}
+</code></pre></div></li></ol> <p>/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */</p> <ol start="18"><li>给定一个长度为n的绳子，将其分成m段（m&gt;1）,求m段的乘积最大</li></ol> <p>/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */</p> <ol start="19"><li>函数柯里化？</li></ol> <p>函数柯里化是指将一个使用多个参数的函数转化为一系列使用一个参数的函数的技术。</p> <p>/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */</p> <ol start="20"><li>求二进制数</li></ol> <p>整数：除2取余，倒序读
+5
+5/2 2 1
+2/2 1 0
+1/2 0 1
+故：5 -&gt; 101</p> <p>负数：正数求值，取反，再加1</p> <div class="language- extra-class"><pre><code>    -5
+    正数 5 -&gt; 101
+    取反 101 -&gt; 010
+    加1  010 -&gt; 011
+    故：-5 -&gt; 011
+</code></pre></div><p>小数：小数乘2，取整，正序读</p> <div class="language- extra-class"><pre><code>    0.125
+    小数乘2 0.125*2=0.25 取整(整数部分为0)  0
+    0.25*2=0.5  0
+    0.5*2=1.0   1(乘到小数为0时结束)
+    正序读       0.001
+
+    同理可试求 0.1
+    0.1*2=0.2  0
+    0.2*2=0.4  0
+    0.4*2=0.8  0
+    0.8*2=1.6  1
+    0.6*2=1.2  1
+    0.2*2=0.4  0 (开始循环了)
+    0.4*2=0.8  0 (开始循环了)
+    0.8*2=1.6  1 (开始循环了)
+    ...
+
+    可见 0.1 求二进制是一个无限循环的小数(0.000110011...)，这也是 0.1 + 0.2 != 0.3 的原因。
+</code></pre></div><p>/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */</p> <ol start="21"><li>原码、反码、补码</li></ol> <p>正数：原码、反码、补码一致</p> <div class="language- extra-class"><pre><code>[+7]原：00000111 [+7]反：00000111 [+7]补：00000111
+</code></pre></div><p>负数：
+* 反码：符号位(1)不变，其它位取反
+* 补码：反码加1</p> <div class="language- extra-class"><pre><code>[-7]原：10000111 [-7]反：11111000 [-7]补：11111001
+</code></pre></div><p>/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */</p> <ol start="22"><li><p>设置小于 12px 的字体</p> <p>.text {
+font-size: 12px;    // chrome 最小仅支持12px
+transform: scale(0.5);  // 在12px基础上缩小，即便font-size小于12px也是以12px为基础
+}</p></li></ol></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">最后更新时间:</span> <span class="time">3/28/2021, 9:04:52 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/docs/technology/1. 前端/1.1 基础 - ECMAScript/this.html" class="prev">
+        this
+      </a></span> <span class="next"><a href="/docs/technology/1. 前端/1.1 基础 - ECMAScript/字符串和数组常用方法.html">
+        字符串和数组常用方法
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/docs/assets/js/app.574fc7ba.js" defer></script><script src="/docs/assets/js/2.438c9cc2.js" defer></script><script src="/docs/assets/js/16.7b1d893e.js" defer></script>
+  </body>
+</html>

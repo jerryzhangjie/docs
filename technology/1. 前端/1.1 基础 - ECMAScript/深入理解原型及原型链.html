@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>能量蓄水池</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/docs/favicon.svg">
+    <meta name="description" content="学习笔记、知识文档、经验总结、生活杂记。">
+    
+    <link rel="preload" href="/docs/assets/css/0.styles.767e998a.css" as="style"><link rel="preload" href="/docs/assets/js/app.574fc7ba.js" as="script"><link rel="preload" href="/docs/assets/js/2.438c9cc2.js" as="script"><link rel="preload" href="/docs/assets/js/20.12825b32.js" as="script"><link rel="prefetch" href="/docs/assets/js/10.782efd2f.js"><link rel="prefetch" href="/docs/assets/js/11.9a017d0a.js"><link rel="prefetch" href="/docs/assets/js/12.8c3fe05c.js"><link rel="prefetch" href="/docs/assets/js/13.32b8501e.js"><link rel="prefetch" href="/docs/assets/js/14.7cbead99.js"><link rel="prefetch" href="/docs/assets/js/15.5ca6d375.js"><link rel="prefetch" href="/docs/assets/js/16.7b1d893e.js"><link rel="prefetch" href="/docs/assets/js/17.8243e47c.js"><link rel="prefetch" href="/docs/assets/js/18.f795c9b4.js"><link rel="prefetch" href="/docs/assets/js/19.e16fd372.js"><link rel="prefetch" href="/docs/assets/js/21.d2e3ba19.js"><link rel="prefetch" href="/docs/assets/js/22.a091a3f3.js"><link rel="prefetch" href="/docs/assets/js/23.1829b4d2.js"><link rel="prefetch" href="/docs/assets/js/24.41ea6154.js"><link rel="prefetch" href="/docs/assets/js/25.d944d918.js"><link rel="prefetch" href="/docs/assets/js/26.f9ba23ac.js"><link rel="prefetch" href="/docs/assets/js/27.33228142.js"><link rel="prefetch" href="/docs/assets/js/28.cc4b94e6.js"><link rel="prefetch" href="/docs/assets/js/29.e183b477.js"><link rel="prefetch" href="/docs/assets/js/3.ce6400d4.js"><link rel="prefetch" href="/docs/assets/js/30.f2b86e7a.js"><link rel="prefetch" href="/docs/assets/js/31.75faa4ac.js"><link rel="prefetch" href="/docs/assets/js/32.1813d3da.js"><link rel="prefetch" href="/docs/assets/js/33.c64ac273.js"><link rel="prefetch" href="/docs/assets/js/34.d54f07d6.js"><link rel="prefetch" href="/docs/assets/js/35.c6b17c27.js"><link rel="prefetch" href="/docs/assets/js/36.93273509.js"><link rel="prefetch" href="/docs/assets/js/37.f4f46233.js"><link rel="prefetch" href="/docs/assets/js/38.fa9900ec.js"><link rel="prefetch" href="/docs/assets/js/39.3b24b23d.js"><link rel="prefetch" href="/docs/assets/js/4.9b8751d4.js"><link rel="prefetch" href="/docs/assets/js/40.5728cc60.js"><link rel="prefetch" href="/docs/assets/js/41.9e47e643.js"><link rel="prefetch" href="/docs/assets/js/42.2cd430a0.js"><link rel="prefetch" href="/docs/assets/js/43.0e9a4cd9.js"><link rel="prefetch" href="/docs/assets/js/44.ec5e25b6.js"><link rel="prefetch" href="/docs/assets/js/45.4cdd4bf1.js"><link rel="prefetch" href="/docs/assets/js/46.b8a5de46.js"><link rel="prefetch" href="/docs/assets/js/47.544a1352.js"><link rel="prefetch" href="/docs/assets/js/48.75ab366d.js"><link rel="prefetch" href="/docs/assets/js/49.59e58f04.js"><link rel="prefetch" href="/docs/assets/js/5.6d67c780.js"><link rel="prefetch" href="/docs/assets/js/50.96ea067f.js"><link rel="prefetch" href="/docs/assets/js/51.144bb382.js"><link rel="prefetch" href="/docs/assets/js/52.8d9aac06.js"><link rel="prefetch" href="/docs/assets/js/53.06e2c5d4.js"><link rel="prefetch" href="/docs/assets/js/54.2d17b229.js"><link rel="prefetch" href="/docs/assets/js/55.7cda8245.js"><link rel="prefetch" href="/docs/assets/js/56.133756ab.js"><link rel="prefetch" href="/docs/assets/js/57.74959c99.js"><link rel="prefetch" href="/docs/assets/js/58.18ff2b44.js"><link rel="prefetch" href="/docs/assets/js/59.b35de2b8.js"><link rel="prefetch" href="/docs/assets/js/6.c3ae577d.js"><link rel="prefetch" href="/docs/assets/js/60.39380f27.js"><link rel="prefetch" href="/docs/assets/js/61.48b5f2aa.js"><link rel="prefetch" href="/docs/assets/js/62.c62037f3.js"><link rel="prefetch" href="/docs/assets/js/63.a439b062.js"><link rel="prefetch" href="/docs/assets/js/64.c24f247a.js"><link rel="prefetch" href="/docs/assets/js/65.e1fa1286.js"><link rel="prefetch" href="/docs/assets/js/66.313ff872.js"><link rel="prefetch" href="/docs/assets/js/67.b8bfc1ca.js"><link rel="prefetch" href="/docs/assets/js/68.f81bf7a5.js"><link rel="prefetch" href="/docs/assets/js/69.c420ebd2.js"><link rel="prefetch" href="/docs/assets/js/7.5229be7a.js"><link rel="prefetch" href="/docs/assets/js/70.f4bec417.js"><link rel="prefetch" href="/docs/assets/js/71.40db7b8a.js"><link rel="prefetch" href="/docs/assets/js/72.f297dce6.js"><link rel="prefetch" href="/docs/assets/js/73.2d73f227.js"><link rel="prefetch" href="/docs/assets/js/74.735fb235.js"><link rel="prefetch" href="/docs/assets/js/75.50f07148.js"><link rel="prefetch" href="/docs/assets/js/76.89a73abf.js"><link rel="prefetch" href="/docs/assets/js/77.66ba0d1e.js"><link rel="prefetch" href="/docs/assets/js/78.81c41079.js"><link rel="prefetch" href="/docs/assets/js/79.14a4fcbf.js"><link rel="prefetch" href="/docs/assets/js/8.30d4ce7d.js"><link rel="prefetch" href="/docs/assets/js/80.af5d096b.js"><link rel="prefetch" href="/docs/assets/js/81.4eccd1c7.js"><link rel="prefetch" href="/docs/assets/js/82.d069817a.js"><link rel="prefetch" href="/docs/assets/js/83.495cd329.js"><link rel="prefetch" href="/docs/assets/js/84.9489494e.js"><link rel="prefetch" href="/docs/assets/js/85.e4406d55.js"><link rel="prefetch" href="/docs/assets/js/86.71cff966.js"><link rel="prefetch" href="/docs/assets/js/87.5eba7956.js"><link rel="prefetch" href="/docs/assets/js/88.6670820c.js"><link rel="prefetch" href="/docs/assets/js/89.cc537610.js"><link rel="prefetch" href="/docs/assets/js/9.99b7e418.js"><link rel="prefetch" href="/docs/assets/js/90.6ccfe07d.js">
+    <link rel="stylesheet" href="/docs/assets/css/0.styles.767e998a.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/docs/" class="home-link router-link-active"><img src="/docs/favicon.svg" alt="能量蓄水池" class="logo"> <span class="site-name can-hide">能量蓄水池</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/docs/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/docs/about/" class="nav-link">
+  关于
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="技术" class="dropdown-title"><span class="title">技术</span> <span class="arrow down"></span></button> <button type="button" aria-label="技术" class="mobile-dropdown-title"><span class="title">技术</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/technology/1. 前端/" class="nav-link">
+  前端
+</a></li><li class="dropdown-item"><!----> <a href="/docs/technology/2. 服务端/" class="nav-link">
+  服务端
+</a></li><li class="dropdown-item"><!----> <a href="/docs/technology/3. 其它/" class="nav-link">
+  其它
+</a></li></ul></div></div><div class="nav-item"><a href="/docs/life/" class="nav-link">
+  生活杂记
+</a></div><div class="nav-item"><a href="/docs/other/" class="nav-link">
+  其它
+</a></div> <a href="https://github.com/jerryzhangjie/docs" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/docs/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><a href="/docs/about/" class="nav-link">
+  关于
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="技术" class="dropdown-title"><span class="title">技术</span> <span class="arrow down"></span></button> <button type="button" aria-label="技术" class="mobile-dropdown-title"><span class="title">技术</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/docs/technology/1. 前端/" class="nav-link">
+  前端
+</a></li><li class="dropdown-item"><!----> <a href="/docs/technology/2. 服务端/" class="nav-link">
+  服务端
+</a></li><li class="dropdown-item"><!----> <a href="/docs/technology/3. 其它/" class="nav-link">
+  其它
+</a></li></ul></div></div><div class="nav-item"><a href="/docs/life/" class="nav-link">
+  生活杂记
+</a></div><div class="nav-item"><a href="/docs/other/" class="nav-link">
+  其它
+</a></div> <a href="https://github.com/jerryzhangjie/docs" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>1.1 基础 - ECMAScript</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/docs/technology/1. 前端/1.1 基础 - ECMAScript/AST抽象语法树.html" class="sidebar-link">AST抽象语法树</a></li><li><a href="/docs/technology/1. 前端/1.1 基础 - ECMAScript/DOM事件.html" class="sidebar-link">DOM事件</a></li><li><a href="/docs/technology/1. 前端/1.1 基础 - ECMAScript/for_in与for_of.html" class="sidebar-link">for_in与for_of</a></li><li><a href="/docs/technology/1. 前端/1.1 基础 - ECMAScript/JS 运行机制.html" class="sidebar-link">JS 运行机制</a></li><li><a href="/docs/technology/1. 前端/1.1 基础 - ECMAScript/this.html" class="sidebar-link">this</a></li><li><a href="/docs/technology/1. 前端/1.1 基础 - ECMAScript/多学一点点.html" class="sidebar-link">多学一点点</a></li><li><a href="/docs/technology/1. 前端/1.1 基础 - ECMAScript/字符串和数组常用方法.html" class="sidebar-link">字符串和数组常用方法</a></li><li><a href="/docs/technology/1. 前端/1.1 基础 - ECMAScript/执行上下文、作用域以及闭包.html" class="sidebar-link">执行上下文、作用域以及闭包</a></li><li><a href="/docs/technology/1. 前端/1.1 基础 - ECMAScript/欺骗词法作用域.html" class="sidebar-link">欺骗词法作用域</a></li><li><a href="/docs/technology/1. 前端/1.1 基础 - ECMAScript/深入理解原型及原型链.html" class="active sidebar-link">深入理解原型及原型链</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/docs/technology/1. 前端/1.1 基础 - ECMAScript/深入理解原型及原型链.html#一、-语言特性" class="sidebar-link">一、 语言特性</a></li><li class="sidebar-sub-header"><a href="/docs/technology/1. 前端/1.1 基础 - ECMAScript/深入理解原型及原型链.html#二、-函数与对象的关系" class="sidebar-link">二、 函数与对象的关系</a></li><li class="sidebar-sub-header"><a href="/docs/technology/1. 前端/1.1 基础 - ECMAScript/深入理解原型及原型链.html#三、-原型链与继承" class="sidebar-link">三、 原型链与继承</a></li><li class="sidebar-sub-header"><a href="/docs/technology/1. 前端/1.1 基础 - ECMAScript/深入理解原型及原型链.html#四、-v8-是如何创建对象的" class="sidebar-link">四、 V8 是如何创建对象的</a></li><li class="sidebar-sub-header"><a href="/docs/technology/1. 前端/1.1 基础 - ECMAScript/深入理解原型及原型链.html#五、-几种常见的继承实现" class="sidebar-link">五、 几种常见的继承实现</a></li><li class="sidebar-sub-header"><a href="/docs/technology/1. 前端/1.1 基础 - ECMAScript/深入理解原型及原型链.html#六、new-做了什么" class="sidebar-link">六、new 做了什么</a></li><li class="sidebar-sub-header"><a href="/docs/technology/1. 前端/1.1 基础 - ECMAScript/深入理解原型及原型链.html#七、-参考" class="sidebar-link">七、 参考</a></li></ul></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>1.2 基础 - CSS</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>1.3 基础 - HTML</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>1.4 浏览器</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>1.5 网络</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>1.6 设计模式</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>1.7 算法</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>1.8 框架</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>1.9 实践及总结</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>1.10 工程化</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>1.11 Other</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><blockquote><p>Javascript 是面向对象语言，但不同于 C++、Java 等基于<strong>类</strong>的实现原理，JS 的面向对象和继承都是基于<strong>原型链</strong>实现的。本文就将深入浅出的对其实现原理进行分析。</p></blockquote> <h2 id="一、-语言特性"><a href="#一、-语言特性" class="header-anchor">#</a> 一、 语言特性</h2> <p>开始剖析原理前，需要记住几个 JS 语言层面的特性：</p> <ul><li>特性1：<strong>函数都是对象</strong>，其实引用类型(function、object、array)都是对象； —— 可由 typeof 和 instanceof 验证</li> <li>特性2：<strong>函数都有一个 prototype 属性</strong>； —— 属性值是一个对象，称为“原型对象”</li> <li>特性3：<strong>对象都是函数创建的，对象都是属性的集合</strong>； —— {} 等形式只是语法糖；</li> <li>特性4：<strong>对象都有一个 __proto__ 属性</strong>； —— 即“隐式原型”，属性值指向创建该对象的函数的“原型对象”；</li></ul> <h2 id="二、-函数与对象的关系"><a href="#二、-函数与对象的关系" class="header-anchor">#</a> 二、 函数与对象的关系</h2> <p>上边提到“函数都是对象”、“对象都是函数创建的”，那么二者到底什么关系呢？</p> <p>一种常见的创建对象的方式如下：</p> <div class="language- extra-class"><pre><code>var foo = new Fn()
+</code></pre></div><p>通常，我们称<code>Fn</code>为构造<strong>函数</strong>，<code>foo</code>为实例<strong>对象</strong>。</p> <p>通过上述特性可知：<br> <strong>构造函数</strong>也是函数，所以它也有一个<code>prototype</code>属性，属性值是一个对象，称为该函数的<strong>原型对象</strong>。<br> <strong>实例对象</strong>也是对象，所以它也有一个<code>__proto__</code>属性，属性值也是<strong>原型对象</strong>。<br>
+此外，<strong>原型对象</strong>默认有一个<code>constrcutor</code>属性，指向<strong>构造函数</strong>。</p> <p>即以下关系是成立的：</p> <ul><li>foo.__proto__ === Fn.prototype</li> <li>Fn.prototype.constructor = Fn</li></ul> <p>实例对象、构造函数、原型对象 三者间的关系如下图：</p> <p><img src="https://gitee.com/jerry-zhang/image-database/raw/master/picgo/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20200713195715.jpg" alt="微信图片_20200713195715"></p> <p>上图中原型对象(Fn.prototype)也是对象，那么它的 __proto__ 属性值是什么呢？</p> <p>其实，自定义函数的 prototype 本质上和 var obj = {} 是一样的，都是被 Object 函数创建，所以它的__proto__指向的就是Object.prototype。但Object.prototype比较特殊，它的__proto__指向null。</p> <p>原型链关系可总结为下图：</p> <p><img src="https://gitee.com/jerry-zhang/image-database/raw/master/picgo/181637013624694.png" alt="181637013624694"></p> <p>很容易得知：console.log(f1 instanceof Foo)  // true。instanceof第一个参数是对象，暂时称为A；第二个参数是函数，暂时称为B。<br>
+instanceof 的判断规则是：如果 B 的 prototype 出现在 A 的 __proto__ 原型链上，则返回true，否则返回false。</p> <p>// 实现</p> <div class="language- extra-class"><pre><code>    function myInstanceof(left, right) {
+        let proto = Object.getPrototypeOf(left)
+        let prototype = right.prototype
+        while (true) {
+            if (proto === null) return false    // 函数中的 return 会提前终止函数，即便 return 在循环中
+            if (proto === prototype) return true
+            proto = Object.getPrototypeOf(proto)
+        }
+    }
+</code></pre></div><p>通过上述规则，可以解析以下怪异现象：</p> <div class="language- extra-class"><pre><code>    console.log(Object instanceof Function)     // true
+    console.log(Function instanceof Object)     // true
+    console.log(Function instanceof Function)   // true
+</code></pre></div><h2 id="三、-原型链与继承"><a href="#三、-原型链与继承" class="header-anchor">#</a> 三、 原型链与继承</h2> <p>访问一个对象的属性时，先在对象自己的属性中查找，如果没有，再沿着 __proto__ 这条链向上查找，直到 Object.prototype，这就是<strong>原型链</strong>。所以，js <strong>继承</strong>是基于原型链实现的。</p> <p>如何区分一个属性是自身的还是从原型中找到的呢？可以使用 hasOwnProperty。</p> <p>如何获取原型？ o.__proto__  或  o.constructor.prototype  或  Object.getPrototypeOf(o)</p> <h2 id="四、-v8-是如何创建对象的"><a href="#四、-v8-是如何创建对象的" class="header-anchor">#</a> 四、 V8 是如何创建对象的</h2> <p>Js 代码在执行时，会被 V8 引擎解析，这时 V8 会用不同的模板来处理 Js 中的对象和函数。</p> <p>例如：</p> <ul><li>ObjectTemplate 用来创建对象</li> <li>FunctionTemplate 用来创建函数</li> <li>PrototypeTemplate 用来创建函数原型</li></ul> <p>我们可以得到以下结论：</p> <ul><li>Js 中的函数都是 FunctionTemplate 创建出来的，返回值的是 FunctionTemplate 实例。</li> <li>Js 中的对象都是 ObjectTemplate 创建出来的，返回值的是 ObjectTemplate 实例。</li> <li>Js 中函数的原型（prototype）都是通过 PrototypeTemplate 创建出来的，返回值是 ObjectTemplate 实例。</li></ul> <p>所以 Js 中的对象的原型可以这样判断：</p> <ul><li>所有的对象的原型都是 Object.prototype，自定义构造函数的实例除外。</li> <li>自定义构造函数的实例，它的原型是对应的构造函数原型。</li></ul> <p>在 Js 中的函数原型判断就更加简单了：</p> <ul><li>所有的函数原型，都是 Function.prototype。</li> <li>所有的内置构造函数，他们的原型都是 Function.prototype。</li></ul> <h2 id="五、-几种常见的继承实现"><a href="#五、-几种常见的继承实现" class="header-anchor">#</a> 五、 几种常见的继承实现</h2> <ol><li><p>原型链继承</p> <p>本质：将两个原本无关联的构造函数，通过原型链建立起继承关系</p> <div class="language- extra-class"><pre><code> // 父类构造函数
+ function Father() {
+     this.name = 'father'
+ }
+ // 子类构造函数
+ function Son() {}
+ // 要构成继承关系，通过上面的关系图可知，需满足原型链关系 Son.prototype.__proto__ === Father.prototype === (new Father()).__proto__ 也就是如下关系
+ Son.prototype = new Father()
+ var instance = new Son()
+ console.log(instance.name)      // father
+</code></pre></div><p>缺点：父类中的引用类型属性在子类实例中共用，会导致数据篡改</p> <div class="language- extra-class"><pre><code> function Father() {
+     this.like = ['apple']
+ }
+ function Son() {}
+ Son.prototype = new Father()
+ var instance_1 = new Son()
+ instace_1.like.push('orange')
+ var instance_2 = new Son()
+ instace_2.like.push('banana')
+ console.log(instance_1.like)      // ['apple', 'orange', 'banana']
+</code></pre></div></li> <li><p>构造函数继承</p> <p>本质：创建子类实例时，都调用一下父类的构造函数，等价于子类实例中完整复制一份父类实例的属性。（因为执行了父类的构造函数，所以是复制<strong>父类实例</strong>，而不是父类原型）</p> <div class="language- extra-class"><pre><code> function Father() {
+     this.like = ['apple']
+ }
+ function Son() {
+     // 每次子类实例化，调用父类构造函数，生成父类实例的副本，复制父类实例属性
+     Father.call(this)
+ }
+ var instance_1 = new Son()
+ instace_1.like.push('orange')
+ var instance_2 = new Son()
+ instace_2.like.push('banana')
+ console.log(instance_1.like)        // ['apple', 'orange']
+</code></pre></div><p>缺点：</p> <ul><li>只能继承父类实例的属性和方法，不能继承原型的属性和方法。</li> <li>每次子类实例化，都要在内存中生成一份父类实例的副本，消耗性能。</li></ul></li> <li><p>组合继承</p> <p>本质：组合上述两种方式，用原型链继承实现对原型属性和方法的继承，用构造函数继承实现对父类实例属性和方法的继承。</p> <div class="language- extra-class"><pre><code> function Father() {
+     this.like = ['apple']
+ }
+ function Son() {
+     // 构造函数继承
+     Father.call(this)   // 第二次调用父类构造函数
+ }
+ // 原型链继承
+ Son.prototype = new Father()    // 第一次调用父类构造函数
+ // 重写子类原型的constructor属性，指向自己的构造函数
+ Son.prototype.constructor = Son
+</code></pre></div><p>缺点：</p> <ul><li>在使用子类创建实例对象时，其原型中会存在两份相同的属性/方法</li></ul></li> <li><p>ES6类继承extends</p> <p>ES6引入了class来定义类，并引入了extends来实现继承。本质：先调用父类的构造函数，创建父类的实例对象this，然后再用子类的构造函数来修改this。用法如下：</p> <div class="language- extra-class"><pre><code> class B extends A {
+     constructor(x, y, color) {
+         super(x, y);    // 调用父类的constructor(x, y)
+         this.color = color
+     }
+ }
+</code></pre></div><p>存在两条继承链：</p> <ul><li>B.__proto__ = A     作为一个对象，子类的隐式原型是父类。</li> <li>B.prototype.__proto__ = A.__proto__       作为一个构造函数，子类的显示原型的隐式原型是父类的显示原型。</li></ul> <p>extends实现继承的核心代码（寄生组合式继承）：</p> <div class="language- extra-class"><pre><code> function _inherits(subType, superType) {
+     
+     // 创建对象，创建父类原型的一个副本
+     // 增强对象，弥补因重写原型而失去的默认的constructor 属性
+     // 指定对象，将新创建的对象赋值给子类的原型
+     subType.prototype = Object.create(superType &amp;&amp; superType.prototype, {
+         constructor: {
+             value: subType,
+             enumerable: false,
+             writable: true,
+             configurable: true
+         }
+     });
+     
+     if (superType) {
+         Object.setPrototypeOf 
+             ? Object.setPrototypeOf(subType, superType) 
+             : subType.__proto__ = superType;
+     }
+ }
+</code></pre></div><p>这是最成熟的实现继承的方法。有点：1.只调用了一次SuperType 构造函数，并且因此避免了在SubType.prototype 上创建不必要的、多余的属性。2.原型链还能保持不变，因此，还能够正常使用instanceof 和isPrototypeOf()</p></li></ol> <h2 id="六、new-做了什么"><a href="#六、new-做了什么" class="header-anchor">#</a> 六、new 做了什么</h2> <div class="language- extra-class"><pre><code>    var a = new A(a, b);
+
+当这段代码运行的时候，内部实际上执行的是：
+
+    // 1. 创建一个空对象
+    var o = {};
+
+    // 2. 将空对象的隐式原型指向为构造器函数的显式原型
+    o.__proto__ = A.prototype;  // Object.setPrototypeOf(o, Fn.prototype)
+    
+    // 3. 将构造函数的this指向空对象，并执行该构造函数将属性和方法添加到空对象上，生成实例对象
+    A.call(o, a, b);
+
+注意：构造函数尽量不要返回值。1.无返回值时，会返回创建的实例对象；2.返回原始值时，会忽略该值，并依然返回创建的实例对象；3.返回对象时，new操作符失效，会像执行了函数一样返回该对象。
+
+自己实现 new 操作符：
+
+    // Fn - 构造函数，args - 构造函数的传参
+    function myNew(Fn, ...args) {
+        let obj = {}
+        Object.setPrototypeOf(obj, Fn.prototype)
+        let rtn = Fn.apply(obj, args)
+        return rtn instanceof Object ? rtn : obj    // 原因见上述“注意”
+    }
+</code></pre></div><h2 id="七、-参考"><a href="#七、-参考" class="header-anchor">#</a> 七、 参考</h2> <p><a href="https://www.cnblogs.com/wangfupeng1988/p/3977924.html" target="_blank" rel="noopener noreferrer">深入理解javascript原型和闭包<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p><a href="https://juejin.im/post/5bcb2e295188255c55472db0#heading-7" target="_blank" rel="noopener noreferrer">JavaScript常用八种继承方案<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">最后更新时间:</span> <span class="time">6/3/2021, 8:02:18 PM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/docs/technology/1. 前端/1.1 基础 - ECMAScript/欺骗词法作用域.html" class="prev">
+        欺骗词法作用域
+      </a></span> <span class="next"><a href="/docs/technology/1. 前端/1.2 基础 - CSS/BFC知多少.html">
+        BFC知多少
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/docs/assets/js/app.574fc7ba.js" defer></script><script src="/docs/assets/js/2.438c9cc2.js" defer></script><script src="/docs/assets/js/20.12825b32.js" defer></script>
+  </body>
+</html>
